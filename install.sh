@@ -11,8 +11,8 @@ ln -s  $HOME/trevdev/vim $HOME/.vim
 rm -f $HOME/.vimrc
 ln -s $HOME/trevdev/vim/.vimrc $HOME/.vimrc
 
-rm -f $HOME/.oh-my-zsh
-ln -s $HOME/trevdev/oh-my-zsh $HOME/.oh-my-zsh
+rm -rf $HOME/.oh-my-zsh
+ln -s  $HOME/trevdev/oh-my-zsh $HOME/.oh-my-zsh
 
 rm -f $HOME/.zshrc
 ln -s $HOME/trevdev/shell/.zshrc $HOME/.zshrc

@@ -104,5 +104,3 @@ autocmd BufEnter .bash_custom set syn=sh
 	set rtp+=~/trevdev/vim/bundle/powerline/powerline/bindings/vim
 	set t_Co=256
 	let g:Powerline_symbols = "fancy"
-
-" Color scheme
