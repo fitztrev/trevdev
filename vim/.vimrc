@@ -79,7 +79,8 @@ autocmd BufEnter .bash_custom set syn=sh
 	" Quit nerdtree if it's the last open
 	autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-	" Taglist plugin
+	" Taglist
+	"let loaded_taglist=1 " disable taglist
 	map <F5> <ESC>:TlistToggle<CR>
 	imap <F5> <ESC>:TlistToggle<CR>
 	let tlist_php_settings = 'php;c:class;f:function'
@@ -103,8 +104,5 @@ autocmd BufEnter .bash_custom set syn=sh
 	set rtp+=~/trevdev/vim/bundle/powerline/powerline/bindings/vim
 	set t_Co=256
 	let g:Powerline_symbols = "fancy"
-
-	" Taglist
-	"let loaded_taglist=1 " disable taglist
 
 " Color scheme
