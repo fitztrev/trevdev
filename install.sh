@@ -8,10 +8,17 @@ cd ~/trevdev
 git submodule update --init
 
 ## Install Vim and Zsh customizations
-ln -s ~/trevdev/vim ~/.vim
+rm -rf ~/.vim
+ln -s  ~/trevdev/vim ~/.vim
+
+rm -f ~/.vimrc
 ln -s ~/trevdev/vim/.vimrc ~/.vimrc
+
+rm -f ~/.zshrc
 ln -s ~/trevdev/shell/.zshrc ~/.zshrc
-source $HOME/.zshrc
+
+## Load new Zsh preferences
+source ~/.zshrc
 
 ## Install Vim plugins
 vim +BundleInstall +qall

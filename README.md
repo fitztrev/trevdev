@@ -1,3 +1,9 @@
+## Requirements
+
+* zsh
+
+`apt-get install zsh`
+
 ## Setup
 
 ### For me
@@ -6,7 +12,7 @@
 
 ### For read-only systems
 
-`git clone git://github.com:fitztrev/trevdev.git ~/trevdev && ~/trevdev/install.sh`
+`git clone git://github.com/fitztrev/trevdev.git ~/trevdev && ~/trevdev/install.sh`
 
 ## For local use
 
