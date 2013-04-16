@@ -80,7 +80,7 @@ autocmd BufEnter .bash_custom set syn=sh
 	autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 	" Taglist
-	"let loaded_taglist=1 " disable taglist
+	let loaded_taglist=1 " disable taglist
 	map <F5> <ESC>:TlistToggle<CR>
 	imap <F5> <ESC>:TlistToggle<CR>
 	let tlist_php_settings = 'php;c:class;f:function'
