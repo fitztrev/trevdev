@@ -34,6 +34,8 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
+DISABLE_AUTO_UPDATE="true"
+
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
