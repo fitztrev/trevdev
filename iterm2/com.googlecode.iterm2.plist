@@ -286,7 +286,7 @@
 	<key>HotkeyModifiers</key>
 	<integer>1573160</integer>
 	<key>IRMemory</key>
-	<integer>4</integer>
+	<integer>16</integer>
 	<key>JobName</key>
 	<true/>
 	<key>LeftCommand</key>
@@ -307,6 +307,10 @@
 	<string>~/trevdev/iterm2</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{712, 448}</string>
+	<key>NSNavPanelExpandedStateForSaveMode</key>
+	<true/>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -346,15 +350,15 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>2009 438 445 271 0 0 2560 1418 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>703 237 924 485 0 0 2560 1418 </string>
+	<string>480 512 924 485 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 542 1410 876 0 0 2560 1418 </string>
+	<string>1536 45 1018 1369 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>268 310 1410 876 0 0 2560 1418 </string>
+	<string>0 15 1536 1403 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>1051 127 1410 876 0 0 2560 1418 </string>
+	<string>79 185 1410 876 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>0 542 1410 876 0 0 2560 1418 </string>
+	<string>0 15 1536 1403 0 0 2560 1418 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1141,7 +1145,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-04-12T15:01:16Z</date>
+	<date>2013-04-17T06:28:19Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
