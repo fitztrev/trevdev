@@ -14,6 +14,7 @@ Bundle 'gmarik/vundle'
 	Bundle 'scrooloose/nerdtree'
 	Bundle 'godlygeek/tabular'
 	Bundle 'vim-scripts/localvimrc'
+	Bundle 'tomtom/tcomment_vim'
 	"Bundle 'flazz/vim-colorschemes'
 	"Bundle 'altercation/vim-colors-solarized'
 
@@ -38,6 +39,8 @@ autocmd BufEnter *.less set syn=css
 autocmd BufEnter .bash_custom set syn=sh
 
 " Key mappings
+	let mapleader = ","
+
 	map <C-j> <C-W>j
 	map <C-k> <C-W>k
 	map <C-h> <C-W>h
@@ -79,7 +82,9 @@ autocmd BufEnter .bash_custom set syn=sh
 	autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 	" Taglist
-	"let loaded_taglist=1 " disable taglist
+	if !executable('exuberant-ctags')
+		let loaded_taglist=1 " disable taglist
+	endif
 	map <F5> <ESC>:TlistToggle<CR>
 	imap <F5> <ESC>:TlistToggle<CR>
 	let tlist_php_settings = 'php;c:class;f:function'
