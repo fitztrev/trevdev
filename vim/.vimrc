@@ -34,6 +34,7 @@ set autoread
 set nobackup
 set nowb
 set noswapfile
+set modelines=2
 
 autocmd BufNewFile,BufEnter *.less set syn=css
 autocmd BufNewFile,BufEnter .bash_custom set syn=sh
