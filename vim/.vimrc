@@ -38,7 +38,6 @@ autocmd BufEnter *.less set syn=css
 autocmd BufEnter .bash_custom set syn=sh
 
 " Key mappings
-	" Smarter way to move btw windows
 	map <C-j> <C-W>j
 	map <C-k> <C-W>k
 	map <C-h> <C-W>h
@@ -104,3 +103,7 @@ autocmd BufEnter .bash_custom set syn=sh
 	set rtp+=~/trevdev/vim/bundle/powerline/powerline/bindings/vim
 	set t_Co=256
 	let g:Powerline_symbols = "fancy"
+
+" Colors
+	" Needed for Solarized colors to work correctly on local Mac
+	set background=light
