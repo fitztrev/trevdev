@@ -3,6 +3,7 @@
 ## Install submodules
 cd $HOME/trevdev
 git submodule update --init
+git submodule foreach "(git checkout master && git pull)"
 
 ## Install Vim and Zsh customizations
 rm -rf $HOME/.vim

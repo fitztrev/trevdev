@@ -35,9 +35,11 @@ set nobackup
 set nowb
 set noswapfile
 set relativenumber
+set modelines=2
 
-autocmd BufEnter *.less set syn=css
-autocmd BufEnter .bash_custom set syn=sh
+autocmd BufNewFile,BufEnter *.less set syn=css
+autocmd BufNewFile,BufEnter .bash_custom set syn=sh
+autocmd BufNewFile,BufRead *.json set ft=javascript
 
 " Key mappings
 	let mapleader = ","
