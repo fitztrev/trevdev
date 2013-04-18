@@ -34,6 +34,7 @@ set autoread
 set nobackup
 set nowb
 set noswapfile
+set relativenumber
 
 autocmd BufEnter *.less set syn=css
 autocmd BufEnter .bash_custom set syn=sh
@@ -60,8 +61,17 @@ autocmd BufEnter .bash_custom set syn=sh
 
 	nnoremap <F3> :set hlsearch!<CR>
 
-	map  <F4> <ESC>:set invnumber<CR>
-	imap <F4> <ESC>:set invnumber<CR>
+	map  <F4> <ESC>:call ToggleNumbers()<CR>
+	imap <F4> <ESC>:call ToggleNumbers()<CR>
+	function! ToggleNumbers()
+		if &relativenumber == 1
+			set number
+		elseif &number == 1
+			set nonumber
+		elseif &number == 0 && $relativenumber == 0
+			set relativenumber
+		endif
+	endfunction
 
 	nnoremap <F6> :call ToggleMouse()<CR>
 	function! ToggleMouse()
