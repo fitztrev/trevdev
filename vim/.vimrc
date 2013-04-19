@@ -15,6 +15,8 @@ Bundle 'gmarik/vundle'
 	Bundle 'godlygeek/tabular'
 	Bundle 'vim-scripts/localvimrc'
 	Bundle 'tomtom/tcomment_vim'
+	Bundle 'airblade/vim-gitgutter'
+	Bundle 'scrooloose/syntastic'
 	"Bundle 'flazz/vim-colorschemes'
 	"Bundle 'altercation/vim-colors-solarized'
 
@@ -68,10 +70,13 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 	function! ToggleNumbers()
 		if &relativenumber == 1
 			set number
+			:GitGutterEnable
 		elseif &number == 1
 			set nonumber
+			:GitGutterDisable
 		elseif &number == 0 && $relativenumber == 0
 			set relativenumber
+			:GitGutterEnable
 		endif
 	endfunction
 
@@ -85,6 +90,10 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 			echo "Mouse usage enabled"
 		endif
 	endfunction
+
+" Colors
+	" Needed for Solarized colors to work correctly on local Mac
+	set background=light
 
 " Plugins
 	" Nerd Tree
@@ -121,6 +130,5 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 	set t_Co=256
 	let g:Powerline_symbols = "fancy"
 
-" Colors
-	" Needed for Solarized colors to work correctly on local Mac
-	set background=light
+	" Git Gutter
+	highlight clear SignColumn
