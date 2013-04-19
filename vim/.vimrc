@@ -42,6 +42,7 @@ set modelines=2
 autocmd BufNewFile,BufEnter *.less set syn=css
 autocmd BufNewFile,BufEnter .bash_custom set syn=sh
 autocmd BufNewFile,BufRead *.json set ft=javascript
+autocmd BufNewFile,BufRead README set syntax=markdown
 
 " Key mappings
 	let mapleader = ","
