@@ -17,6 +17,7 @@ Bundle 'gmarik/vundle'
 	Bundle 'tomtom/tcomment_vim'
 	Bundle 'airblade/vim-gitgutter'
 	Bundle 'scrooloose/syntastic'
+	Bundle 'groenewege/vim-less'
 	"Bundle 'flazz/vim-colorschemes'
 	"Bundle 'altercation/vim-colors-solarized'
 
@@ -39,7 +40,7 @@ set noswapfile
 set relativenumber
 set modelines=2
 
-autocmd BufNewFile,BufEnter *.less set syn=css
+autocmd BufNewFile,BufEnter *.less set ft=less
 autocmd BufNewFile,BufEnter .bash_custom set syn=sh
 autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead README set syntax=markdown
