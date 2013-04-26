@@ -101,6 +101,7 @@ autocmd BufNewFile,BufRead README set syntax=markdown
 	" Nerd Tree
 	nmap <C-n> :NERDTreeToggle<CR>
 	let NERDTreeDirArrows=0
+	let NERDTreeShowHidden=1
 	" Quit nerdtree if it's the last open
 	autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
