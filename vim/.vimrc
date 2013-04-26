@@ -97,6 +97,8 @@ autocmd BufNewFile,BufRead README set syntax=markdown
 	" Needed for Solarized colors to work correctly on local Mac
 	set background=light
 
+	highlight Search ctermfg=Black ctermbg=Red
+
 " Plugins
 	" Nerd Tree
 	nmap <C-n> :NERDTreeToggle<CR>
