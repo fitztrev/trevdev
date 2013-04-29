@@ -98,7 +98,7 @@ autocmd BufNewFile,BufRead README set syntax=markdown
 	set background=light
 
 	highlight Search ctermfg=Black ctermbg=Red
-	highlight LineNr ctermfg=Grey
+	highlight LineNr ctermfg=10
 
 " Plugins
 	" Nerd Tree
