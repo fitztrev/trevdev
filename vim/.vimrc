@@ -39,7 +39,7 @@ set nowb
 set noswapfile
 set relativenumber
 set modelines=2
-set mouse=a
+"set mouse=a
 
 autocmd BufNewFile,BufEnter *.less set ft=less
 autocmd BufNewFile,BufEnter .bash_custom set syn=sh
