@@ -350,11 +350,11 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>2009 438 445 271 0 0 2560 1418 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>1404 337 605 485 0 0 2560 1418 </string>
+	<string>1404 337 924 485 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 37 1536 1381 0 0 2560 1418 </string>
+	<string>0 15 1277 1403 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1536 49 1018 1369 0 0 2560 1418 </string>
+	<string>0 530 1410 876 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>0 530 1410 876 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -959,7 +959,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Smart Cursor Color</key>
 			<true/>
 			<key>Smart Selection Rules</key>
@@ -1145,7 +1145,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-05-09T14:28:54Z</date>
+	<date>2013-05-15T13:05:22Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
