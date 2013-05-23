@@ -44,6 +44,7 @@ set modelines=2
 set backspace=indent,eol,start
 "set mouse=a
 
+autocmd BufNewFile,BufEnter *.jade set ft=jade
 autocmd BufNewFile,BufEnter *.less set ft=less
 autocmd BufNewFile,BufEnter .bash_custom set syn=sh
 autocmd BufNewFile,BufRead *.json set ft=javascript
