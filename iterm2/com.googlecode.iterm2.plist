@@ -352,11 +352,11 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>1404 337 924 485 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 15 1536 1403 0 0 2560 1418 </string>
+	<string>0 15 1277 1403 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1536 15 1018 1403 0 0 2560 1418 </string>
+	<string>0 530 1410 876 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>2562 561 1410 876 2560 0 900 1440 </string>
+	<string>0 530 1410 876 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>169 223 1410 876 0 0 2560 1418 </string>
 	<key>New Bookmarks</key>
@@ -959,7 +959,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Smart Cursor Color</key>
 			<true/>
 			<key>Smart Selection Rules</key>
@@ -1145,7 +1145,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-04-29T13:24:23Z</date>
+	<date>2013-05-15T13:05:22Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>

@@ -19,6 +19,7 @@ Bundle 'gmarik/vundle'
 	Bundle 'scrooloose/syntastic'
 	Bundle 'groenewege/vim-less'
 	Bundle 'digitaltoad/vim-jade'
+	Bundle 'editorconfig/editorconfig-vim'
 	"Bundle 'flazz/vim-colorschemes'
 	"Bundle 'altercation/vim-colors-solarized'
 
