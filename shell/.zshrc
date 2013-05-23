@@ -48,3 +48,5 @@ fi
 
 source $HOME/trevdev/shell/.aliases
 source $HOME/trevdev/shell/.vars
+
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin

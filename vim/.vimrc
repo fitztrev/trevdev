@@ -40,6 +40,7 @@ set nowb
 set noswapfile
 set relativenumber
 set modelines=2
+set backspace=indent,eol,start
 "set mouse=a
 
 autocmd BufNewFile,BufEnter *.less set ft=less
