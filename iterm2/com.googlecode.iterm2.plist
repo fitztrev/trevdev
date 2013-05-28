@@ -352,13 +352,13 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>1404 337 924 485 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1424 89 1018 1267 0 0 2560 1418 </string>
+	<string>1280 31 1277 1381 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1536 15 1018 1403 0 0 2560 1418 </string>
+	<string>0 15 1277 1403 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>1280 15 1277 1403 0 0 2560 1418 </string>
+	<string>1141 532 1410 876 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>2560 581 885 859 2560 0 900 1440 </string>
+	<string>2560 564 1410 876 2560 0 900 1440 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>564 141 1410 876 0 0 2560 1418 </string>
 	<key>New Bookmarks</key>
