@@ -18,6 +18,7 @@ Bundle 'gmarik/vundle'
 	Bundle 'airblade/vim-gitgutter'
 	Bundle 'scrooloose/syntastic'
 	Bundle 'groenewege/vim-less'
+	Bundle 'tpope/vim-fugitive'
 	"Bundle 'flazz/vim-colorschemes'
 	"Bundle 'altercation/vim-colors-solarized'
 
