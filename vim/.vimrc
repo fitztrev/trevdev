@@ -19,6 +19,8 @@ Bundle 'gmarik/vundle'
 	Bundle 'scrooloose/syntastic'
 	Bundle 'groenewege/vim-less'
 	Bundle 'tpope/vim-fugitive'
+	Bundle 'digitaltoad/vim-jade'
+	Bundle 'editorconfig/editorconfig-vim'
 	"Bundle 'flazz/vim-colorschemes'
 	"Bundle 'altercation/vim-colors-solarized'
 
@@ -40,8 +42,10 @@ set nowb
 set noswapfile
 set relativenumber
 set modelines=2
+set backspace=indent,eol,start
 "set mouse=a
 
+autocmd BufNewFile,BufEnter *.jade set ft=jade
 autocmd BufNewFile,BufEnter *.less set ft=less
 autocmd BufNewFile,BufEnter .bash_custom set syn=sh
 autocmd BufNewFile,BufRead *.json set ft=javascript
