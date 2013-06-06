@@ -21,6 +21,7 @@ Bundle 'gmarik/vundle'
 	Bundle 'tpope/vim-fugitive'
 	Bundle 'digitaltoad/vim-jade'
 	Bundle 'editorconfig/editorconfig-vim'
+	Bundle 'xsbeats/vim-blade'
 	"Bundle 'flazz/vim-colorschemes'
 	"Bundle 'altercation/vim-colors-solarized'
 
@@ -46,6 +47,7 @@ set backspace=indent,eol,start
 "set mouse=a
 
 autocmd BufNewFile,BufEnter *.jade set ft=jade
+autocmd BufNewFile,BufEnter *.blade.php set ft=blade
 autocmd BufNewFile,BufEnter *.less set ft=less
 autocmd BufNewFile,BufEnter .bash_custom set syn=sh
 autocmd BufNewFile,BufRead *.json set ft=javascript
