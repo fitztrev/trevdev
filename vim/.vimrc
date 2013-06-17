@@ -22,6 +22,7 @@ Bundle 'gmarik/vundle'
 	Bundle 'digitaltoad/vim-jade'
 	Bundle 'editorconfig/editorconfig-vim'
 	Bundle 'xsbeats/vim-blade'
+	Bundle 'kchmck/vim-coffee-script'
 	"Bundle 'flazz/vim-colorschemes'
 	"Bundle 'altercation/vim-colors-solarized'
 
