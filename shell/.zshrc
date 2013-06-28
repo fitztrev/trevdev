@@ -49,4 +49,6 @@ fi
 source $HOME/trevdev/shell/.aliases
 source $HOME/trevdev/shell/.vars
 
+[[ -s ~/.nvm/nvm.sh ]] && . ~/.nvm/nvm.sh
+
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin
