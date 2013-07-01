@@ -302,7 +302,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 0</string>
 	<key>NSFontPanelPreviewHeight</key>
-	<real>72</real>
+	<real>74</real>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/trevdev/iterm2</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -352,11 +352,11 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>892 218 924 485 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 542 1410 876 0 0 2560 1418 </string>
+	<string>1280 27 1277 1391 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1150 524 1410 876 0 0 2560 1418 </string>
+	<string>2560 4 899 1436 2560 0 900 1440 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 15 1536 1403 0 0 2560 1418 </string>
+	<string>0 632 1410 776 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>1536 15 1018 1403 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
@@ -912,11 +912,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>MonacoForPowerline 12</string>
+			<string>MonacoForPowerline 11</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MonacoForPowerline 12</string>
+			<string>MonacoForPowerline 11</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1157,7 +1157,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-06-24T13:18:00Z</date>
+	<date>2013-06-28T14:24:02Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -1218,6 +1218,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>1.0.0.20130622</string>
+	<string>1.0.0.20130624</string>
 </dict>
 </plist>
