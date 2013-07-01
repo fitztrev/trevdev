@@ -48,6 +48,7 @@ fi
 
 source $HOME/trevdev/shell/.aliases
 source $HOME/trevdev/shell/.vars
+[[ -s ~/.local-aliases ]] && source ~/.local-aliases
 
 [[ -s ~/.nvm/nvm.sh ]] && . ~/.nvm/nvm.sh
 
