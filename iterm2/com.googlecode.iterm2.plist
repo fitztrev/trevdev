@@ -350,15 +350,15 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>772 728 445 271 0 0 2560 1418 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>892 218 924 485 0 0 2560 1418 </string>
+	<string>1380 242 924 485 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>1280 27 1277 1391 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>2560 4 899 1436 2560 0 900 1440 </string>
+	<string>512 847 962 491 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>0 632 1410 776 0 0 2560 1418 </string>
+	<string>410 580 1410 776 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>1536 15 1018 1403 0 0 2560 1418 </string>
+	<string>1150 630 1410 776 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>2560 581 899 859 2560 0 900 1440 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
@@ -1157,7 +1157,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-06-28T14:24:02Z</date>
+	<date>2013-07-12T12:56:54Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -1198,7 +1198,7 @@
 	<key>UseBorder</key>
 	<false/>
 	<key>UseCompactLabel</key>
-	<true/>
+	<false/>
 	<key>UseLionStyleFullscreen</key>
 	<true/>
 	<key>WebKitDefaultFontSize</key>
