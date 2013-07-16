@@ -13,5 +13,7 @@ alias ..5="cd ../../../../.."
 
 alias -- -="cd -"
 
+alias nw='/Applications/node-webkit.app/Contents/MacOS/node-webkit'
+
 alias mkcd='_(){ mkdir $1; cd $1; }; _'
 alias growl='_(){ terminal-notifier -message "${1:-'OK'}" -activate "com.googlecode.iterm2" }; _'
