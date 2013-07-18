@@ -53,3 +53,5 @@ source $HOME/trevdev/shell/.vars
 [[ -s ~/.nvm/nvm.sh ]] && . ~/.nvm/nvm.sh
 
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
