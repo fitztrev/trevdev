@@ -23,6 +23,7 @@ Bundle 'gmarik/vundle'
 	Bundle 'editorconfig/editorconfig-vim'
 	Bundle 'xsbeats/vim-blade'
 	Bundle 'kchmck/vim-coffee-script'
+	Bundle 'vim-scripts/applescript.vim'
 	"Bundle 'flazz/vim-colorschemes'
 	"Bundle 'altercation/vim-colors-solarized'
 
@@ -50,6 +51,7 @@ set backspace=indent,eol,start
 autocmd BufNewFile,BufEnter *.jade set ft=jade
 autocmd BufNewFile,BufEnter *.blade.php set ft=blade
 autocmd BufNewFile,BufEnter *.less set ft=less
+autocmd BufNewFile,BufEnter *.applescript set ft=applescript
 autocmd BufNewFile,BufEnter .bash_custom set syn=sh
 autocmd BufNewFile,BufRead *.json set ft=javascript
 autocmd BufNewFile,BufRead README set syntax=markdown
