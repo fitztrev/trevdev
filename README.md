@@ -42,6 +42,7 @@ List of the applicationss that I keep installed.
 * CoRD
 * Chrome
 * Firefox
+* iTerm2
 * Mou
 * MySQL Workbench
 * Scrup
