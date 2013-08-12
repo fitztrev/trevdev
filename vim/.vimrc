@@ -43,6 +43,7 @@ set autoread
 set nobackup
 set nowb
 set noswapfile
+set number
 set relativenumber
 set modelines=2
 set backspace=indent,eol,start
@@ -82,12 +83,13 @@ autocmd BufNewFile,BufRead README set syntax=markdown
 	imap <F4> <ESC>:call ToggleNumbers()<CR>
 	function! ToggleNumbers()
 		if &relativenumber == 1
-			set number
+			set norelativenumber
 			:GitGutterEnable
 		elseif &number == 1
 			set nonumber
 			:GitGutterDisable
 		elseif &number == 0 && $relativenumber == 0
+			set number
 			set relativenumber
 			:GitGutterEnable
 		endif
