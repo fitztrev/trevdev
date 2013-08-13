@@ -47,15 +47,15 @@ set number
 set relativenumber
 set modelines=2
 set backspace=indent,eol,start
-"set mouse=a
 
-autocmd BufNewFile,BufEnter *.jade set ft=jade
-autocmd BufNewFile,BufEnter *.blade.php set ft=blade
-autocmd BufNewFile,BufEnter *.less set ft=less
+autocmd BufNewFile,BufEnter .bash_custom  set ft=sh
 autocmd BufNewFile,BufEnter *.applescript set ft=applescript
-autocmd BufNewFile,BufEnter .bash_custom set syn=sh
-autocmd BufNewFile,BufRead *.json set ft=javascript
-autocmd BufNewFile,BufRead README set syntax=markdown
+autocmd BufNewFile,BufEnter *.blade.php   set ft=blade
+autocmd BufNewFile,BufEnter *.coffee      set ft=coffee
+autocmd BufNewFile,BufEnter *.jade        set ft=jade
+autocmd BufNewFile,BufEnter *.json        set ft=javascript
+autocmd BufNewFile,BufEnter *.less        set ft=less
+autocmd BufNewFile,BufEnter README        set ft=markdown
 
 " Key mappings
 	let mapleader = ","
