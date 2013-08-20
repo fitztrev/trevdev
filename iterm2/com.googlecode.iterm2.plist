@@ -350,13 +350,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>772 728 445 271 0 0 2560 1418 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>1380 242 924 485 0 0 2560 1418 </string>
+	<string>1238 242 924 485 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1280 27 1277 1391 0 0 2560 1418 </string>
+	<string>0 12 1536 1406 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>512 847 962 491 0 0 2560 1418 </string>
+	<string>2560 572 1410 776 2560 0 900 1440 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>410 580 1410 776 0 0 2560 1418 </string>
+	<string>1536 6 1024 1412 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>1150 630 1410 776 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
@@ -368,6 +368,18 @@
 		<dict>
 			<key>ASCII Anti Aliased</key>
 			<true/>
+			<key>AWDS Pane Directory</key>
+			<string></string>
+			<key>AWDS Pane Option</key>
+			<string>No</string>
+			<key>AWDS Tab Directory</key>
+			<string></string>
+			<key>AWDS Tab Option</key>
+			<string>No</string>
+			<key>AWDS Window Directory</key>
+			<string></string>
+			<key>AWDS Window Option</key>
+			<string>No</string>
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
@@ -583,7 +595,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>No</string>
+			<string>Yes</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Disable Printing</key>
@@ -1088,7 +1100,7 @@
 			<key>Window Type</key>
 			<integer>0</integer>
 			<key>Working Directory</key>
-			<string>/Users/tfitzgerald</string>
+			<string>~/dev</string>
 		</dict>
 	</array>
 	<key>NoSyncNeverRemindPrefsChangesCopy</key>
@@ -1157,7 +1169,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-07-12T12:56:54Z</date>
+	<date>2013-08-19T13:08:37Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
