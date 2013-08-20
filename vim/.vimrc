@@ -79,6 +79,7 @@ autocmd BufWinLeave * call clearmatches()
 
 	nore ; :
 	imap jj <Esc>
+	imap kk <Esc>
 
 	map  <F1> <ESC>:wall<CR>
 	imap <F1> <ESC>:wall<CR>
