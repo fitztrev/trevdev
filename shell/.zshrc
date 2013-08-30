@@ -40,20 +40,15 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-if [[ $UID -eq 0 ]] ; then
-	cd /var/www
-fi
-
-#bindkey -v # vim bindings
-
 source $HOME/trevdev/shell/.aliases
 source $HOME/trevdev/shell/.vars
 [[ -s ~/.local-aliases ]] && source ~/.local-aliases
 
+## This line is currently under study for removal...
+#export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin
+
+## NVM (Node Version Manager)
 [[ -s ~/.nvm/nvm.sh ]] && . ~/.nvm/nvm.sh
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin
-
-#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
+## RVM (Ruby Version Manager)
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
