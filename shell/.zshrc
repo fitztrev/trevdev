@@ -52,3 +52,6 @@ source $HOME/trevdev/shell/.vars
 
 ## RVM (Ruby Version Manager)
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
+
+# Travis gem
+[[ -s ~/.travis/travis.sh ]] && source ~/.travis/travis.sh
