@@ -1,3 +1,5 @@
+alias vi='/usr/local/bin/vim'
+
 alias gs='git status'
 alias gd='git diff'
 
