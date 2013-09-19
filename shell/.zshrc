@@ -44,8 +44,8 @@ source $HOME/trevdev/shell/.aliases
 source $HOME/trevdev/shell/.vars
 [[ -s ~/.local-aliases ]] && source ~/.local-aliases
 
-## This line is currently under study for removal...
-#export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin
+## Update $PATH for Homebrew
+export PATH="/usr/local/bin:$PATH"
 
 ## NVM (Node Version Manager)
 [[ -s ~/.nvm/nvm.sh ]] && . ~/.nvm/nvm.sh
