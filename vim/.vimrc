@@ -13,6 +13,7 @@ Bundle 'gmarik/vundle'
 	Bundle 'editorconfig/editorconfig-vim'
 	Bundle 'godlygeek/tabular'
 	Bundle 'groenewege/vim-less'
+	Bundle 'jnwhiteh/vim-golang'
 	Bundle 'kchmck/vim-coffee-script'
 	Bundle 'kien/ctrlp.vim'
 	Bundle 'Lokaltog/powerline'
@@ -53,6 +54,7 @@ autocmd BufNewFile,BufEnter .bash_custom  set ft=sh
 autocmd BufNewFile,BufEnter *.applescript set ft=applescript
 autocmd BufNewFile,BufEnter *.blade.php   set ft=blade
 autocmd BufNewFile,BufEnter *.coffee      set ft=coffee
+autocmd BufNewFile,BufEnter *.go          set ft=go
 autocmd BufNewFile,BufEnter *.jade        set ft=jade
 autocmd BufNewFile,BufEnter *.json        set ft=javascript
 autocmd BufNewFile,BufEnter *.less        set ft=less
