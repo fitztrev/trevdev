@@ -60,6 +60,9 @@ autocmd BufNewFile,BufEnter *.json        set ft=javascript
 autocmd BufNewFile,BufEnter *.less        set ft=less
 autocmd BufNewFile,BufEnter README        set ft=markdown
 
+" Source the .vimrc file after saving it
+autocmd BufWritePost .vimrc source $MYVIMRC
+
 " Make trailing whitespace annoyingly highlighted.
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
