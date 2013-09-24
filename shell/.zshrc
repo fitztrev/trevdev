@@ -47,6 +47,9 @@ source $HOME/trevdev/shell/.vars
 ## Update $PATH for Homebrew
 export PATH="/usr/local/bin:$PATH"
 
+## Update $PATH for Google App Engine
+export PATH=~/dev/go_appengine:$PATH
+
 ## NVM (Node Version Manager)
 [[ -s ~/.nvm/nvm.sh ]] && . ~/.nvm/nvm.sh
 
