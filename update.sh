@@ -1,8 +1,13 @@
 #!/bin/sh
 
+echo '########## Updating trevdev  ##############'
 git pull origin master
 git submodule update
 git submodule foreach git pull origin master
-
-## Update Vim plugins
 vim +BundleUpdate +qall
+
+echo '########## Updating gems     #############j#'
+gem update
+
+echo '########## Updating homebrew ###############'
+brew update && brew upgrade
