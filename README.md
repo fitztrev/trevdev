@@ -43,6 +43,7 @@ List of the applicationss that I keep installed.
 * Chrome
 * Firefox
 * iTerm2
+* LICEcap - For recording GIFs
 * Mou
 * MySQL Workbench
 * Scrup
@@ -50,3 +51,25 @@ List of the applicationss that I keep installed.
 * Spotify
 * Vagrant
 * VirtualBox
+
+### Chrome Extensions
+* Adblock Plus
+* Feedly
+* Hover Zoom
+* JSONView
+* LastPass
+* OneTab
+* PageSpeed Insights
+* Reddit-Style Comments for Hacker News
+
+### Firefox Add-ons
+* Auto Reload
+* ColorZilla
+* Firebug
+* Firepicker
+* JSONView
+* LastPass
+* Page Speed
+* Selenium IDE
+* Skip Cert Error
+* Web Developer Toolbar
