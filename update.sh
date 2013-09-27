@@ -6,7 +6,7 @@ git submodule update
 git submodule foreach git pull origin master
 vim +BundleUpdate +qall
 
-echo '########## Updating gems     #############j#'
+echo '########## Updating gems     ###############'
 gem update
 
 echo '########## Updating homebrew ###############'
