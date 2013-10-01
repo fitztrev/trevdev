@@ -22,7 +22,31 @@ end
 
 namespace :install do
   task :default do
-    puts ' TODO '.center(60, '=')
+    puts ' Installing '.center(60, '=')
+
+    system('git submodule update --init')
+
+    ## Install dotfiles
+    system('rm -rf $HOME/.vim')
+    system('ln -s  $PWD/vim $HOME/.vim')
+
+    system('rm -f $HOME/.vimrc')
+    system('ln -s $PWD/vim/.vimrc $HOME/.vimrc')
+
+    system('rm -rf $HOME/.oh-my-zsh')
+    system('ln -s  $PWD/oh-my-zsh $HOME/.oh-my-zsh')
+
+    system('rm -f $HOME/.zshrc')
+    system('ln -s $PWD/shell/.zshrc $HOME/.zshrc')
+
+    ## Load new Zsh preferences
+    system('source $HOME/.zshrc')
+
+    ## Install Vim plugins
+    system('vim +BundleInstall +qall')
+
+    ## Change shell
+    system('chsh -s /bin/zsh')
   end
 end
 
