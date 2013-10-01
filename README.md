@@ -1,16 +1,16 @@
 ## Requirements
 
-`apt-get install zsh`
+* ZSH
+  * `brew install zsh`
+  * `apt-get install zsh`
 
-## Setup
+## Installation
 
-### For me
+`rake install`
 
-`git clone git@github.com:fitztrev/trevdev.git ~/trevdev && ~/trevdev/install.sh`
+## Updating
 
-### For read-only systems
-
-`git clone git://github.com/fitztrev/trevdev.git ~/trevdev && ~/trevdev/install.sh`
+`rake update`
 
 ## For local use
 
@@ -22,7 +22,7 @@
 
 ## Apps
 
-List of the applicationss that I keep installed.
+List of the applications that I keep installed.
 
 ### App Store
 * App2Dmg
@@ -54,6 +54,7 @@ List of the applicationss that I keep installed.
 
 ### Chrome Extensions
 * Adblock Plus
+* Awesome Screenshot
 * Feedly
 * Hover Zoom
 * JSONView
@@ -73,3 +74,14 @@ List of the applicationss that I keep installed.
 * Selenium IDE
 * Skip Cert Error
 * Web Developer Toolbar
+
+### Homebrew Packages
+* composer
+* git
+* php55
+* php55-mcrypt
+* phpunit
+* vim
+* wget
+* zsh
+* zsh-syntax-highlighting
