@@ -16,7 +16,7 @@ namespace :update do
 
   task :homebrew do
     puts ' Updating Homebrew '.center(60, '=')
-    system('brew update && brew upgrade')
+    system('type brew >/dev/null 2>&1 && brew update && brew upgrade || echo "Skipping homebrew"')
   end
 end
 
@@ -46,6 +46,7 @@ namespace :install do
     system('vim +BundleInstall +qall')
 
     ## Change shell
+    puts 'Changing shell. Enter your password if prompted.'
     system('chsh -s /bin/zsh')
   end
 end
