@@ -1,16 +1,25 @@
-## Requirements
-
-* ZSH
-  * `brew install zsh`
-  * `apt-get install zsh`
-
 ## Installation
 
-`rake install`
+**OS X**
+
+```
+$ brew install zsh
+$ rake install
+```
+
+**Ubuntu**
+
+```
+$ sudo apt-get install rubygems vim zsh
+$ gem install rake
+$ rake install
+```
 
 ## Updating
 
-`rake update`
+```
+$ rake update
+```
 
 ## For local use
 
