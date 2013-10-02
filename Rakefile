@@ -39,9 +39,6 @@ namespace :install do
     system('rm -f $HOME/.zshrc')
     system('ln -s $PWD/shell/.zshrc $HOME/.zshrc')
 
-    ## Load new Zsh preferences
-    system('source $HOME/.zshrc')
-
     ## Install Vim plugins
     system('vim +BundleInstall +qall')
 
