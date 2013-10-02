@@ -11,7 +11,7 @@ $ rake install
 
 ```
 $ sudo apt-get install rubygems vim zsh
-$ gem install rake
+$ sudo gem install rake
 $ rake install
 ```
 
