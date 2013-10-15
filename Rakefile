@@ -18,6 +18,11 @@ namespace :update do
     puts ' Updating Homebrew '.center(60, '=')
     system('type brew >/dev/null 2>&1 && brew update && brew upgrade || echo "Skipping homebrew"')
   end
+
+  task :system do
+    puts ' Checking for OS X updates '.center(60, '=')
+    system('sudo softwareupdate -l')
+  end
 end
 
 namespace :install do
