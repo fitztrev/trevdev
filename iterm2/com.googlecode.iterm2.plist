@@ -350,9 +350,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>772 728 445 271 0 0 2560 1418 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>182 237 924 485 0 0 2560 1418 </string>
+	<string>91 299 924 485 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>19 392 675 716 0 0 2560 1418 </string>
+	<string>512 151 1536 1196 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 4 1529 1413 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1291,7 +1291,7 @@
 			<key>Blur</key>
 			<false/>
 			<key>Blur Radius</key>
-			<real>2.1023252010345459</real>
+			<real>1.193805456161499</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -1819,7 +1819,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.012502311728894711</real>
+			<real>0.083272464573383331</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -1896,7 +1896,7 @@
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
-	<true/>
+	<false/>
 	<key>RightCommand</key>
 	<integer>8</integer>
 	<key>RightOption</key>
