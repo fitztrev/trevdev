@@ -44,6 +44,9 @@ namespace :install do
     system('rm -f $HOME/.zshrc')
     system('ln -s $PWD/shell/.zshrc $HOME/.zshrc')
 
+    system('rm -f $HOME/.slate')
+    system('ln -s $PWD/slate/.slate $HOME/.slate')
+
     ## Install Vim plugins
     system('vim +BundleInstall +qall')
 
