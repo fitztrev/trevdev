@@ -5,7 +5,6 @@ set rtp+=~/trevdev/vim/bundle/vundle/
 call vundle#rc()
 "filetype plugin indent on
 filetype plugin on
-Bundle 'gmarik/vundle'
 
 	" My Bundles
 	Bundle 'airblade/vim-gitgutter'
