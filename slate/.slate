@@ -13,6 +13,8 @@ bind 2:alt ${righthalf}
 bind 3:alt ${fullscreen}
 bind 4:alt ${halfscreen}
 
+bind `:alt grid padding:5 0:8,5 1:2,2
+
 ## Resize Bindings
 bind right:alt       resize +10% +0
 bind left:alt        resize -10% +0
