@@ -54,7 +54,10 @@ export PATH=~/dev/go_appengine:$PATH
 [[ -s ~/.nvm/nvm.sh ]] && . ~/.nvm/nvm.sh
 
 ## RVM (Ruby Version Manager)
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
+#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+## Rbenv
+eval "$(rbenv init -)"
 
 # Travis gem
 [[ -s ~/.travis/travis.sh ]] && source ~/.travis/travis.sh
