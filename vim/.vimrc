@@ -58,6 +58,7 @@ autocmd BufNewFile,BufEnter *.go          set ft=go
 autocmd BufNewFile,BufEnter *.jade        set ft=jade
 autocmd BufNewFile,BufEnter *.json        set ft=javascript
 autocmd BufNewFile,BufEnter *.less        set ft=less
+autocmd BufNewFile,BufEnter .slate        set ft=python
 autocmd BufNewFile,BufEnter README        set ft=markdown
 
 " Source the .vimrc file after saving it

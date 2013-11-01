@@ -5,15 +5,20 @@ config resizePercentOf          screenSize
 alias lefthalf         move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
 alias righthalf        move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
 
+alias left2thirds      move screenOriginX;screenOriginY screenSizeX*0.6;screenSizeY
+alias right1third      move screenOriginX+screenSizeX*0.6;screenOriginY screenSizeX*0.4;screenSizeY
+
 alias fullscreen     move screenOriginX;screenOriginY screenSizeX;screenSizeY
 alias halfscreen     move screenOriginX+screenSizeX/10;screenOriginY+screenSizeY/20 screenSizeX-screenSizeX/5;screenSizeY-screenSizeY/5
 
+bind q:alt ${left2thirds}
+bind w:alt ${right1third}
 bind 1:alt ${lefthalf}
 bind 2:alt ${righthalf}
 bind 3:alt ${fullscreen}
 bind 4:alt ${halfscreen}
 
-bind `:alt grid padding:5 0:8,5 1:2,2
+bind `:alt grid padding:5 0:8,5 1:2,4
 
 ## Resize Bindings
 bind right:alt       resize +10% +0
