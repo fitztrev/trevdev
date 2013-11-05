@@ -47,6 +47,7 @@ List of the applications that I keep installed.
 * Xcode
 
 ### 3rd Party
+* [Alfred](http://www.alfredapp.com/)
 * Android Studio
 * CocoaRestClient
 * CodeKit
