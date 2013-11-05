@@ -28,6 +28,7 @@ filetype plugin on
 	Bundle 'xsbeats/vim-blade'
 	"Bundle 'altercation/vim-colors-solarized'
 	"Bundle 'flazz/vim-colorschemes'
+	"Bundle 'nathanaelkane/vim-indent-guides'
 
 	Bundle 'taglist.vim'
 
