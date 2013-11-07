@@ -57,7 +57,7 @@ export PATH=~/dev/go_appengine:$PATH
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 ## Rbenv
-eval "$(rbenv init -)"
+type rbenv >/dev/null 2>&1 && eval "$(rbenv init -)"
 
 # Travis gem
 [[ -s ~/.travis/travis.sh ]] && source ~/.travis/travis.sh
