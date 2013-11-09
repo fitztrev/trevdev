@@ -56,6 +56,9 @@ namespace :install do
   end
 
   task :mac do
+    puts ' Configuring Mac preferences'.center(60, '=')
+    system('osascript applescript/*.applescript')
+
     puts ' Installing NVM '.center(60, '=')
     system('curl https://raw.github.com/creationix/nvm/master/install.sh | sh')
 
