@@ -16,6 +16,12 @@ $ cd ~/trevdev
 $ rake install
 ```
 
+*Configuring iTerm2:*
+
+1. Install `Monaco for Powerline` font
+2. Set iTerm2 preferences URL on the General tab to the location of the `iterm2` folder
+3. Restart iTerm2
+
 **Ubuntu**
 
 ```
@@ -29,13 +35,6 @@ $ rake install
 ```
 $ rake update
 ```
-
-## For local use
-
-1. Install fonts so Powerline will work
-2. Set iTerm2 "Non-ASCII font" to `Monaco for Powerline`
-3. Set iTerm2 preferences URL on the General tab to the location of `iterm2`
-4. Import iterm2/colors.itermcolors into iTerm2 profile
 
 ## Apps
 
