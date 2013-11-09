@@ -67,7 +67,9 @@ namespace :install do
     system('brew tap josegonzalez/homebrew-php')
     system('brew install php55 php55-mcrypt')
     system('brew install composer mosh phpunit rbenv ruby-build vim wget zsh-syntax-highlighting')
+  end
 
+  task :git do
     puts ' Configuring git '.center(60, '=')
     system('git config --global user.name "Trevor Fitzgerald"')
     system('git config --global user.email fitztrev@gmail.com')
