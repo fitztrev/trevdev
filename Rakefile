@@ -54,6 +54,22 @@ namespace :install do
     puts 'Changing shell. Enter your password if prompted.'
     system('chsh -s /bin/zsh')
   end
+
+  task :mac do
+    puts ' Installing NVM '.center(60, '=')
+    system('curl https://raw.github.com/creationix/nvm/master/install.sh | sh')
+
+    puts ' Installing other Homebrew packages '.center(60, '=')
+    system('brew tap homebrew/dupes')
+    system('brew tap josegonzalez/homebrew-php')
+    system('brew install php55 php55-mcrypt')
+    system('brew install composer mosh phpunit rbenv ruby-build vim wget zsh-syntax-highlighting')
+
+    puts ' Configuring git '.center(60, '=')
+    system('git config --global user.name "Trevor Fitzgerald"')
+    system('git config --global user.email fitztrev@gmail.com')
+    system('git config --global color.ui true')
+  end
 end
 
 task :default => "update:default"

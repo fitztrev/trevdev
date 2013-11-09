@@ -2,10 +2,15 @@
 
 **OS X**
 
-Install [Homebrew](http://brew.sh)
-
 ```
+$ ssh-keygen -t rsa -C "fitztrev@gmail.com"
+
+$ sudo xcodebuild -license
+$ xcode-select --install
+
+$ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 $ brew install git zsh
+
 $ git clone git@github.com:fitztrev/trevdev.git ~/trevdev
 $ cd ~/trevdev
 $ rake install
@@ -39,17 +44,14 @@ List of the applications that I keep installed.
 ### App Store
 * App2Dmg
 * CopyClip
-* Cloud (for sharing screen shots)
 * Go2Shell
-* LimeChat
+* Lingo IRC
 * LittleIpsum
-* Visual JSON
 * Xcode
 
 ### 3rd Party
 * [Alfred](http://www.alfredapp.com/)
 * Android Studio
-* CocoaRestClient
 * CodeKit
 * CoRD
 * Chrome
@@ -58,8 +60,10 @@ List of the applications that I keep installed.
 * LICEcap - For recording GIFs
 * Mou
 * MySQL Workbench
+* Reggy
 * Scrup
 * [Shuttle](http://fitztrev.github.io/shuttle/)
+* Skype
 * [Slate](https://github.com/jigish/slate)
 * Spotify
 * Vagrant
@@ -67,13 +71,14 @@ List of the applications that I keep installed.
 
 ### Chrome Extensions
 * Adblock Plus
-* Awesome Screenshot
-* Feedly
+* Dev Docs
 * Hover Zoom
 * JSONView
 * LastPass
 * OneTab
 * PageSpeed Insights
+* PHP Docs-to-go
+* Postman (Packaged app)
 * Reddit-Style Comments for Hacker News
 
 ### Firefox Add-ons
@@ -83,18 +88,7 @@ List of the applications that I keep installed.
 * Firepicker
 * JSONView
 * LastPass
-* Page Speed
+* [Page Speed](https://developers.google.com/speed/docs/insights/using_firefox)
 * Selenium IDE
 * Skip Cert Error
 * Web Developer Toolbar
-
-### Homebrew Packages
-* composer
-* git
-* php55
-* php55-mcrypt
-* phpunit
-* vim
-* wget
-* zsh
-* zsh-syntax-highlighting
