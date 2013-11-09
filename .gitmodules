@@ -7,3 +7,6 @@
 [submodule "solarized"]
 	path = solarized
 	url = git://github.com/altercation/solarized.git
+[submodule "dockutil"]
+	path = dockutil
+	url = https://github.com/kcrawford/dockutil.git

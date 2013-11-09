@@ -69,6 +69,20 @@ namespace :install do
     system('brew install composer mosh phpunit rbenv ruby-build vim wget zsh-syntax-highlighting')
   end
 
+  task :dock do
+    puts ' Cleaning up dock '.center(60, '=')
+    system('./dockutil/scripts/dockutil --remove "Contacts"')
+    system('./dockutil/scripts/dockutil --remove "Safari"')
+    system('./dockutil/scripts/dockutil --remove "Notes"')
+    system('./dockutil/scripts/dockutil --remove "Maps"')
+    system('./dockutil/scripts/dockutil --remove "FaceTime"')
+    system('./dockutil/scripts/dockutil --remove "Photo Booth"')
+    system('./dockutil/scripts/dockutil --remove "iTunes"')
+    system('./dockutil/scripts/dockutil --remove "iBooks"')
+    system('./dockutil/scripts/dockutil --remove "App Store"')
+    system('./dockutil/scripts/dockutil --remove "System Preferences"')
+  end
+
   task :git do
     puts ' Configuring git '.center(60, '=')
     system('git config --global user.name "Trevor Fitzgerald"')
