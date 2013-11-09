@@ -55,6 +55,7 @@ List of the applications that I keep installed.
 * CoRD
 * Chrome
 * Firefox
+* [Flux](http://justgetflux.com/)
 * iTerm2
 * LICEcap - For recording GIFs
 * Mou
