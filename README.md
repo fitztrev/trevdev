@@ -62,6 +62,7 @@ List of the applications that I keep installed.
 * MySQL Workbench
 * Reggy
 * Scrup
+* [Sequel Pro](http://www.sequelpro.com/)
 * [Shuttle](http://fitztrev.github.io/shuttle/)
 * Skype
 * [Slate](https://github.com/jigish/slate)
