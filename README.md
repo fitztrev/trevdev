@@ -25,7 +25,7 @@ $ rake install
 **Ubuntu**
 
 ```
-$ sudo apt-get install rubygems vim zsh
+$ sudo apt-get install git rubygems vim zsh
 $ sudo gem install rake
 $ rake install
 ```
