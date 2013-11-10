@@ -69,6 +69,11 @@ namespace :install do
     system('brew install composer mosh phpunit rbenv ruby-build vim wget zsh-syntax-highlighting')
   end
 
+  task :linux do
+    puts ' Configuring Linux preferences'.center(60, '=')
+    system('sudo apt-get install -y mosh tmux weechat')
+  end
+
   task :dock do
     puts ' Cleaning up dock '.center(60, '=')
     system('./dockutil/scripts/dockutil --remove "Contacts"')
