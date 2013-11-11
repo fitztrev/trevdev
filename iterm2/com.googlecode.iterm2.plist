@@ -350,15 +350,15 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>772 728 445 271 0 0 2560 1418 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>91 299 924 485 0 0 2560 1418 </string>
+	<string>1262 422 924 485 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>512 151 1536 1196 0 0 2560 1418 </string>
+	<string>0 642 1410 776 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 4 1529 1413 0 0 2560 1418 </string>
+	<string>1536 12 1018 1406 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>1150 636 1410 776 0 0 2560 1418 </string>
+	<string>2560 12 899 701 2560 0 900 1418 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>1150 630 1410 776 0 0 2560 1418 </string>
+	<string>1150 642 1410 776 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>2560 581 899 859 2560 0 900 1440 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
@@ -1908,7 +1908,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-10-24T14:31:18Z</date>
+	<date>2013-11-11T13:50:08Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -1955,7 +1955,7 @@
 	<key>WebKitDefaultFontSize</key>
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
-	<string>Lucida Grande</string>
+	<string>.Lucida Grande UI</string>
 	<key>Window Arrangements</key>
 	<dict/>
 	<key>WindowNumber</key>
@@ -1969,6 +1969,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>1.0.0.20130624</string>
+	<string>1.0.0.20131108</string>
 </dict>
 </plist>
