@@ -66,7 +66,7 @@ namespace :install do
     system('brew tap homebrew/dupes')
     system('brew tap josegonzalez/homebrew-php')
     system('brew install php55 php55-mcrypt')
-    system('brew install composer mosh phpunit rbenv ruby-build vim wget zsh-syntax-highlighting')
+    system('brew install composer mosh phpunit rbenv ruby-build tmux vim wget zsh-syntax-highlighting')
   end
 
   task :linux do
