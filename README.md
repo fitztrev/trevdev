@@ -76,6 +76,7 @@ List of the applications that I keep installed.
 * Hover Zoom
 * JSONView
 * LastPass
+* LiveReload
 * OneTab
 * PageSpeed Insights
 * PHP Docs-to-go
