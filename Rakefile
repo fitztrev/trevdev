@@ -67,6 +67,31 @@ namespace :install do
     system('brew tap josegonzalez/homebrew-php')
     system('brew install php55 php55-mcrypt')
     system('brew install composer mosh phpunit rbenv ruby-build tmux vim wget zsh-syntax-highlighting')
+
+	puts ' Mac Defaults '.center(60, '=')
+	# Expand save panel by default
+	system('defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true')
+	# Save to disk (not to iCloud) by default
+	system('defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false')
+	# Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
+	system('defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false')
+	# Totally disable the dashboard
+	system('defaults write com.apple.dashboard mcx-disabled -boolean TRUE')
+	# Always open everything in Finder's list view. This is important.
+	system('defaults write com.apple.Finder FXPreferredViewStyle Nlsv')
+	# Show the ~/Library folder.
+	system('chflags nohidden ~/Library')
+	# Disable the warning when changing a file extension
+	system('defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false')
+	# Finder: show all filename extensions
+	system('defaults write NSGlobalDomain AppleShowAllExtensions -bool true')
+	# Add iOS Simulator to Launchpad
+	system('ln -s /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app /Applications/iOS\ Simulator.app')
+	# Finder: show status bar
+	system('defaults write com.apple.finder ShowStatusBar -bool true')
+	# Disable the “Are you sure you want to open this application?” dialog
+	system('defaults write com.apple.LaunchServices LSQuarantine -bool false')
+
   end
 
   task :linux do
