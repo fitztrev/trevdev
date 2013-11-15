@@ -73,6 +73,7 @@ List of the applications that I keep installed.
 ### Chrome Extensions
 * Adblock Plus
 * Dev Docs
+* Ghostery
 * Hover Zoom
 * JSONView
 * LastPass
@@ -82,6 +83,8 @@ List of the applications that I keep installed.
 * PHP Docs-to-go
 * Postman (Packaged app)
 * Reddit-Style Comments for Hacker News
+* Speed Tracer
+* Web Developer
 
 ### Firefox Add-ons
 * Auto Reload
