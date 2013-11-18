@@ -270,7 +270,7 @@
 	<key>HideScrollbar</key>
 	<false/>
 	<key>HideTab</key>
-	<true/>
+	<false/>
 	<key>HighlightTabLabels</key>
 	<true/>
 	<key>HotKeyBookmark</key>
@@ -350,15 +350,15 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>772 728 445 271 0 0 2560 1418 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>1262 422 924 485 0 0 2560 1418 </string>
+	<string>1400 375 924 485 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 642 1410 776 0 0 2560 1418 </string>
+	<string>0 5 2558 1413 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1536 12 1018 1406 0 0 2560 1418 </string>
+	<string>2560 710 899 708 2560 0 900 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>2560 12 899 701 2560 0 900 1418 </string>
+	<string>147 220 2334 873 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>1150 642 1410 776 0 0 2560 1418 </string>
+	<string>0 5 2558 1413 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>2560 581 899 859 2560 0 900 1440 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
@@ -1908,7 +1908,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-11-11T13:50:08Z</date>
+	<date>2013-11-15T14:10:20Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -1969,6 +1969,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>1.0.0.20131108</string>
+	<string>1.0.0.20131109</string>
 </dict>
 </plist>
