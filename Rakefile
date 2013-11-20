@@ -96,7 +96,7 @@ namespace :install do
 
   task :linux do
     puts ' Configuring Linux preferences'.center(60, '=')
-    system('sudo apt-get install -y mosh tmux weechat')
+    system('sudo apt-get install -y fail2ban mosh tmux weechat')
   end
 
   task :dock do
