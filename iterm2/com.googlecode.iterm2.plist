@@ -267,6 +267,8 @@
 	<false/>
 	<key>HideActivityIndicator</key>
 	<false/>
+	<key>HideMenuBarInFullscreen</key>
+	<true/>
 	<key>HideScrollbar</key>
 	<false/>
 	<key>HideTab</key>
@@ -354,7 +356,7 @@
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 5 2558 1413 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>2560 710 899 708 2560 0 900 1418 </string>
+	<string>2560 500 899 918 2560 0 900 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>147 220 2334 873 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -1908,7 +1910,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2013-11-15T14:10:20Z</date>
+	<date>2013-11-18T12:21:07Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -1969,6 +1971,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>1.0.0.20131109</string>
+	<string>1.0.0.20131116</string>
 </dict>
 </plist>
