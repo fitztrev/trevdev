@@ -66,8 +66,8 @@ mac: mac
 	@echo ' Configuring Mac preferences'
 	osascript applescript/*.applescript
 	@echo ' Installing other Homebrew packages '
-	brew tap homebrew/dupes
-	brew tap josegonzalez/homebrew-php
+	brew tap homebrew/dupes || echo "Skipping tap"
+	brew tap josegonzalez/homebrew-php || echo "Skipping tap"
 	brew install php55 php55-mcrypt
 	brew install composer mosh phpunit rbenv ruby-build tmux vim wget zsh-syntax-highlighting
 	@echo ' Mac Defaults '
