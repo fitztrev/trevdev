@@ -62,7 +62,7 @@ linux:
 	sudo apt-get install -y fail2ban mosh tmux weechat
 
 .PHONY: mac
-mac: mac
+mac: dock
 	@echo ' Configuring Mac preferences'
 	osascript applescript/*.applescript
 	@echo ' Installing other Homebrew packages '
@@ -88,7 +88,7 @@ mac: mac
 	# Finder: show all filename extensions
 	defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 	# Add iOS Simulator to Launchpad
-	ln -s /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app /Applications/iOS\ Simulator.app
+	[ ! -L /Applications/iOS\ Simulator.app ] && ln -s /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app /Applications/iOS\ Simulator.app
 	# Finder: show status bar
 	defaults write com.apple.finder ShowStatusBar -bool true
 	# Disable the “Are you sure you want to open this application?” dialog
