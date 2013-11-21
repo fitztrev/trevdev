@@ -1,5 +1,10 @@
 build: update gems homebrew
 
+.PHONY: ssh-key
+ssh-key:
+	@read -r -p "Email Address/Comment: " COMMENT; \
+	 ssh-keygen -t rsa -C "$$COMMENT"
+
 .PHONY: update
 update:
 	@echo "Updating trevdev"
@@ -47,9 +52,11 @@ install: git nvm
 .PHONY: git
 git:
 	@echo ' Configuring git '
-	git config --global user.name "Trevor Fitzgerald"
-	git config --global user.email fitztrev@gmail.com
-	git config --global color.ui true
+	@read -r -p "Name: " NAME; \
+	 git config --global user.name "$$NAME"
+	@read -r -p "Email Address: " EMAIL; \
+	 git config --global user.email $$EMAIL
+	@git config --global color.ui true
 
 .PHONY: nvm
 nvm:
