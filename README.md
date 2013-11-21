@@ -25,15 +25,17 @@ $ rake install
 **Ubuntu**
 
 ```
-$ sudo apt-get install git rubygems vim zsh
-$ sudo gem install rake
-$ rake install
+$ sudo apt-get update && sudo apt-get upgrade -y
+$ sudo apt-get install -y build-essential git vim zsh
+$ git clone https://github.com/fitztrev/trevdev.git ~/trevdev
+$ cd ~/trevdev
+$ make install linux
 ```
 
 ## Updating
 
 ```
-$ rake update
+$ make
 ```
 
 ## Apps
