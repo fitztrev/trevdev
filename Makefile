@@ -1,9 +1,5 @@
-build: update gems homebrew
-
-.PHONY: ssh-key
-ssh-key:
-	@read -r -p "Email Address/Comment: " COMMENT; \
-	 ssh-keygen -t rsa -C "$$COMMENT"
+build: update
+install: git setup nvm linux mac
 
 .PHONY: update
 update:
@@ -12,24 +8,22 @@ update:
 	git submodule update
 	git submodule foreach git pull origin master
 	vim +BundleUpdate +qall
-
-.PHONY: gems
-gems:
 	@echo ' Updating Gems '
 	@gem update || true
-
-.PHONY: homebrew
-homebrew:
 	@echo ' Updating Homebrew '
 	@type brew >/dev/null 2>&1 && brew update && brew upgrade || true
 
-.PHONY: osx
-osx:
-	@echo ' Checking for OS X updates '
-	sudo softwareupdate -l
+.PHONY: git
+git:
+	@echo ' Configuring git '
+	@read -r -p "Name: " NAME; \
+	 git config --global user.name "$$NAME"
+	@read -r -p "Email Address: " EMAIL; \
+	 git config --global user.email $$EMAIL
+	@git config --global color.ui true
 
-.PHONY: install
-install: git nvm
+.PHONY: setup
+setup:
 	@echo ' Installing '
 	git submodule update --init
 	## Install dotfiles
@@ -49,15 +43,6 @@ install: git nvm
 	echo 'Changing shell. Enter your password if prompted.'
 	chsh -s /bin/zsh
 
-.PHONY: git
-git:
-	@echo ' Configuring git '
-	@read -r -p "Name: " NAME; \
-	 git config --global user.name "$$NAME"
-	@read -r -p "Email Address: " EMAIL; \
-	 git config --global user.email $$EMAIL
-	@git config --global color.ui true
-
 .PHONY: nvm
 nvm:
 	@echo ' Installing NVM '
@@ -65,24 +50,28 @@ nvm:
 
 .PHONY: linux
 linux:
+ifeq ($(shell uname),Linux)
 	@echo ' Configuring Ubuntu Software Packages '
 	sudo apt-get update
 	sudo apt-get upgrade -y
 	sudo apt-get install -y \
-	fail2ban \
-	mosh \
-	tmux \
-	weechat
+	 fail2ban \
+	 mosh \
+	 tmux \
+	 weechat
+endif
 
-.PHONY: mac
-mac: dock
+.PHONY: mac-prefs
+mac-prefs:
+ifeq ($(shell uname),Darwin)
 	@echo ' Configuring Mac preferences'
 	osascript applescript/*.applescript
 	@echo ' Installing other Homebrew packages '
+	ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 	brew tap homebrew/dupes || true
 	brew tap josegonzalez/homebrew-php || true
 	brew install php55 php55-mcrypt
-	brew install composer mosh phpunit rbenv ruby-build tmux vim wget zsh-syntax-highlighting
+	brew install composer git mosh phpunit rbenv ruby-build tmux vim wget zsh zsh-syntax-highlighting
 	@echo ' Mac Defaults '
 	# Expand save panel by default
 	defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -106,9 +95,11 @@ mac: dock
 	defaults write com.apple.finder ShowStatusBar -bool true
 	# Disable the “Are you sure you want to open this application?” dialog
 	defaults write com.apple.LaunchServices LSQuarantine -bool false
+endif
 
-.PHONY: dock
-dock:
+.PHONY: mac-dock
+mac-dock:
+ifeq ($(shell uname),Darwin)
 	@echo ' Cleaning up dock '
 	./dockutil/scripts/dockutil --remove "Contacts"
 	./dockutil/scripts/dockutil --remove "Safari"
@@ -120,3 +111,9 @@ dock:
 	./dockutil/scripts/dockutil --remove "iBooks"
 	./dockutil/scripts/dockutil --remove "App Store"
 	./dockutil/scripts/dockutil --remove "System Preferences"
+endif
+
+.PHONY: ssh-key
+ssh-key:
+	@read -r -p "Email Address/Comment: " COMMENT; \
+	 ssh-keygen -t rsa -C "$$COMMENT"
