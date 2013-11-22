@@ -13,7 +13,7 @@ $ brew install git zsh
 
 $ git clone git@github.com:fitztrev/trevdev.git ~/trevdev
 $ cd ~/trevdev
-$ rake install
+$ make install mac
 ```
 
 *Configuring iTerm2:*
