@@ -16,12 +16,12 @@ update:
 .PHONY: gems
 gems:
 	@echo ' Updating Gems '
-	@gem update
+	@gem update || true
 
 .PHONY: homebrew
 homebrew:
 	@echo ' Updating Homebrew '
-	@type brew >/dev/null 2>&1 && brew update && brew upgrade || echo "Skipping homebrew"
+	@type brew >/dev/null 2>&1 && brew update && brew upgrade || true
 
 .PHONY: osx
 osx:
@@ -79,8 +79,8 @@ mac: dock
 	@echo ' Configuring Mac preferences'
 	osascript applescript/*.applescript
 	@echo ' Installing other Homebrew packages '
-	brew tap homebrew/dupes || echo "Skipping tap"
-	brew tap josegonzalez/homebrew-php || echo "Skipping tap"
+	brew tap homebrew/dupes || true
+	brew tap josegonzalez/homebrew-php || true
 	brew install php55 php55-mcrypt
 	brew install composer mosh phpunit rbenv ruby-build tmux vim wget zsh-syntax-highlighting
 	@echo ' Mac Defaults '
