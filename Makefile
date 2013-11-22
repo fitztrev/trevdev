@@ -1,30 +1,38 @@
 build: update
 install: git setup nvm linux mac
 
+GIT_USER_NAME := $(shell git config --get user.name)
+GIT_USER_EMAIL := $(shell git config --get user.email)
+
 .PHONY: update
 update:
-	@echo "Updating trevdev"
-	git pull origin master
-	git submodule update
-	git submodule foreach git pull origin master
-	vim +BundleUpdate +qall
-	@echo ' Updating Gems '
+	@echo 'Updating $(shell pwd)'
+	@git pull origin master
+	@git submodule update
+	@git submodule foreach git pull origin master
+	@echo 'Updating Vim'
+	@vim +BundleUpdate +qall
+	@echo 'Updating Gems'
 	@gem update || true
-	@echo ' Updating Homebrew '
+	@echo 'Updating Homebrew'
 	@type brew >/dev/null 2>&1 && brew update && brew upgrade || true
 
 .PHONY: git
 git:
-	@echo ' Configuring git '
-	@read -r -p "Name: " NAME; \
-	 git config --global user.name "$$NAME"
-	@read -r -p "Email Address: " EMAIL; \
-	 git config --global user.email $$EMAIL
+	@echo 'Configuring git'
 	@git config --global color.ui true
+	@read -r -p "Name ($(GIT_USER_NAME)): " NAME; \
+	 if [ ! -z $$NAME ]; then \
+	   git config --global user.name "$$NAME"; \
+	 fi
+	@read -r -p "Email ($(GIT_USER_EMAIL)): " EMAIL; \
+	 if [ ! -z $$EMAIL ]; then \
+	   git config --global user.email "$$EMAIL"; \
+	 fi
 
 .PHONY: setup
 setup:
-	@echo ' Installing '
+	@echo 'Installing'
 	git submodule update --init
 	## Install dotfiles
 	rm -rf $(HOME)/.vim
@@ -45,13 +53,13 @@ setup:
 
 .PHONY: nvm
 nvm:
-	@echo ' Installing NVM '
+	@echo 'Installing NVM'
 	curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 
 .PHONY: linux
 linux:
 ifeq ($(shell uname),Linux)
-	@echo ' Configuring Ubuntu Software Packages '
+	@echo 'Configuring Ubuntu Software Packages'
 	sudo apt-get update
 	sudo apt-get upgrade -y
 	sudo apt-get install -y \
@@ -64,15 +72,15 @@ endif
 .PHONY: mac-prefs
 mac-prefs:
 ifeq ($(shell uname),Darwin)
-	@echo ' Configuring Mac preferences'
+	@echo 'Configuring Mac preferences'
 	osascript applescript/*.applescript
-	@echo ' Installing other Homebrew packages '
+	@echo 'Installing other Homebrew packages'
 	ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 	brew tap homebrew/dupes || true
 	brew tap josegonzalez/homebrew-php || true
 	brew install php55 php55-mcrypt
 	brew install composer git mosh phpunit rbenv ruby-build tmux vim wget zsh zsh-syntax-highlighting
-	@echo ' Mac Defaults '
+	@echo 'Mac Defaults'
 	# Expand save panel by default
 	defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 	# Save to disk (not to iCloud) by default
@@ -100,7 +108,7 @@ endif
 .PHONY: mac-dock
 mac-dock:
 ifeq ($(shell uname),Darwin)
-	@echo ' Cleaning up dock '
+	@echo 'Cleaning up dock'
 	./dockutil/scripts/dockutil --remove "Contacts"
 	./dockutil/scripts/dockutil --remove "Safari"
 	./dockutil/scripts/dockutil --remove "Notes"
