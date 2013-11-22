@@ -69,8 +69,8 @@ ifeq ($(shell uname),Linux)
 	 weechat
 endif
 
-.PHONY: mac-prefs
-mac-prefs:
+.PHONY: mac
+mac:
 ifeq ($(shell uname),Darwin)
 	@echo 'Configuring Mac preferences'
 	osascript applescript/*.applescript
@@ -103,11 +103,6 @@ ifeq ($(shell uname),Darwin)
 	defaults write com.apple.finder ShowStatusBar -bool true
 	# Disable the “Are you sure you want to open this application?” dialog
 	defaults write com.apple.LaunchServices LSQuarantine -bool false
-endif
-
-.PHONY: mac-dock
-mac-dock:
-ifeq ($(shell uname),Darwin)
 	@echo 'Cleaning up dock'
 	./dockutil/scripts/dockutil --remove "Contacts"
 	./dockutil/scripts/dockutil --remove "Safari"
