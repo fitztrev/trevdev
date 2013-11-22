@@ -65,8 +65,14 @@ nvm:
 
 .PHONY: linux
 linux:
-	@echo ' Configuring Linux preferences'
-	sudo apt-get install -y fail2ban mosh tmux weechat
+	@echo ' Configuring Ubuntu Software Packages '
+	sudo apt-get update
+	sudo apt-get upgrade -y
+	sudo apt-get install -y \
+	fail2ban \
+	mosh \
+	tmux \
+	weechat
 
 .PHONY: mac
 mac: dock
