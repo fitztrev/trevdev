@@ -101,7 +101,7 @@ mac: dock
 	# Finder: show all filename extensions
 	defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 	# Add iOS Simulator to Launchpad
-	[ ! -L /Applications/iOS\ Simulator.app ] && ln -s /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app /Applications/iOS\ Simulator.app
+	[ ! -L /Applications/iOS\ Simulator.app ] && ln -s /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app /Applications/iOS\ Simulator.app || true
 	# Finder: show status bar
 	defaults write com.apple.finder ShowStatusBar -bool true
 	# Disable the “Are you sure you want to open this application?” dialog
