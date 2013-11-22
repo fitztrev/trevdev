@@ -1,8 +1,8 @@
 build: update
 install: git setup nvm linux mac
 
-GIT_USER_NAME := $(shell git config --get user.name)
-GIT_USER_EMAIL := $(shell git config --get user.email)
+GIT_USER_NAME := $(shell git config --get --global user.name)
+GIT_USER_EMAIL := $(shell git config --get --global user.email)
 
 .PHONY: update
 update:
