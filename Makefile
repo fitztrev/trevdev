@@ -80,6 +80,8 @@ ifeq ($(shell uname),Darwin)
 	brew tap josegonzalez/homebrew-php || true
 	brew install php55 php55-mcrypt
 	brew install composer git mosh phpunit rbenv ruby-build tmux vim wget zsh zsh-syntax-highlighting
+	brew tap phinze/homebrew-cask || true
+	brew install brew-cask
 	@echo 'Mac Defaults'
 	# Expand save panel by default
 	defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
