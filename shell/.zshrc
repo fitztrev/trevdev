@@ -45,7 +45,7 @@ source $HOME/trevdev/shell/.vars
 [[ -s ~/.local-aliases ]] && source ~/.local-aliases
 
 ## Update $PATH for Homebrew
-export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 ## Update $PATH for Google App Engine
 export PATH=~/dev/go_appengine:$PATH
@@ -53,11 +53,8 @@ export PATH=~/dev/go_appengine:$PATH
 ## NVM (Node Version Manager)
 [[ -s ~/.nvm/nvm.sh ]] && . ~/.nvm/nvm.sh
 
-## RVM (Ruby Version Manager)
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
 ## Rbenv
-export RBENV_ROOT=/usr/local/var/rbenv
+#export RBENV_ROOT=/usr/local/var/rbenv
 type rbenv >/dev/null 2>&1 && eval "$(rbenv init -)"
 
 # Travis gem
