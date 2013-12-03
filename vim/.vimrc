@@ -168,3 +168,7 @@ autocmd BufWinLeave * call clearmatches()
 
 	" Git Gutter
 	highlight clear SignColumn
+
+	" Syntastic
+	" disable for angular
+	let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
