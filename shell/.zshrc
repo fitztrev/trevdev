@@ -66,3 +66,6 @@ type rbenv >/dev/null 2>&1 && eval "$(rbenv init -)"
 
 ## ZSH syntax highlighting
 [[ -s /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
