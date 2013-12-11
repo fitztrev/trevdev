@@ -69,3 +69,7 @@ type rbenv >/dev/null 2>&1 && eval "$(rbenv init -)"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+### Android SDK
+export PATH="/Users/tfitzgerald/android-sdk/sdk/tools:$PATH"
+export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home"
