@@ -61,11 +61,14 @@ export PATH=~/dev/go_appengine:$PATH
 #export RBENV_ROOT=/usr/local/var/rbenv
 type rbenv >/dev/null 2>&1 && eval "$(rbenv init -)"
 
-# Travis gem
+## Travis gem
 [[ -s ~/.travis/travis.sh ]] && source ~/.travis/travis.sh
 
 ## ZSH syntax highlighting
 [[ -s /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+## Autojump
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
