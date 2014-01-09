@@ -172,3 +172,4 @@ autocmd BufWinLeave * call clearmatches()
 	" Syntastic
 	" disable for angular
 	let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
+	let g:loaded_syntastic_php_phpcs_checker = 1
