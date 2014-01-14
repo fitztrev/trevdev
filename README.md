@@ -25,7 +25,7 @@ $ make install
 
 ### Configuring iTerm2
 
-1. Install `Monaco for Powerline` font
+1. Install `Monaco for Powerline` font (included)
 2. Set iTerm2 preferences URL on the General tab to the location of the `iterm2` folder
 3. Restart iTerm2
 
