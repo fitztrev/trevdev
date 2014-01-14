@@ -3,7 +3,8 @@ function FindProxyForURL(url, host) {
     if (
          (host == "localhost") ||
          (host == "127.0.0.1") ||
-         (shExpMatch(host, "*.dev"))
+         (shExpMatch(host, "*.dev")) ||
+         (shExpMatch(host, "*.intlbancard.*"))
        )
     {
         return "DIRECT";
