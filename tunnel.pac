@@ -4,7 +4,8 @@ function FindProxyForURL(url, host) {
          (host == "localhost") ||
          (host == "127.0.0.1") ||
          (shExpMatch(host, "*.dev")) ||
-         (shExpMatch(host, "*.intlbancard.*"))
+         (shExpMatch(host, "*.intlbancard.*")) ||
+         (host == "172.27.72.27")
        )
     {
         return "DIRECT";
