@@ -1,12 +1,13 @@
 function FindProxyForURL(url, host) {
     // If on localhost or *.dev site, don't proxy
     if (
-         (host == "localhost") ||
-         (host == "127.0.0.1") ||
-         (shExpMatch(host, "*.dev")) ||
-         (shExpMatch(host, "*.intlbancard.*")) ||
-         (shExpMatch(host, "10.*")) ||
-         (host == "172.27.72.27")
+            (host == "localhost")
+         || (host == "127.0.0.1")
+         || (host == "172.27.72.27")
+         || (shExpMatch(host, "10.*"))
+         || (shExpMatch(host, "192.*"))
+         || (shExpMatch(host, "*.dev"))
+         || (shExpMatch(host, "*.intlbancard.*"))
        )
     {
         return "DIRECT";
