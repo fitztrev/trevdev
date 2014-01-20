@@ -5,6 +5,7 @@ function FindProxyForURL(url, host) {
          (host == "127.0.0.1") ||
          (shExpMatch(host, "*.dev")) ||
          (shExpMatch(host, "*.intlbancard.*")) ||
+         (shExpMatch(host, "10.*")) ||
          (host == "172.27.72.27")
        )
     {
