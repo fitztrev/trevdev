@@ -1,5 +1,5 @@
 build: update
-install: git setup nvm linux mac
+install: git setup nvm linux mac mac-dock mac-apps
 
 GIT_USER_NAME := $(shell git config --get --global user.name)
 GIT_USER_EMAIL := $(shell git config --get --global user.email)
@@ -75,13 +75,12 @@ ifeq ($(shell uname),Darwin)
 	@echo 'Configuring Mac preferences'
 	osascript applescript/*.applescript
 	@echo 'Installing other Homebrew packages'
-	ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+	ruby -e "$$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 	brew tap homebrew/dupes || true
 	brew tap josegonzalez/homebrew-php || true
 	brew install php55 php55-mcrypt
 	brew install composer git mosh phpunit rbenv ruby-build tmux vim wget zsh zsh-syntax-highlighting
-	brew tap phinze/homebrew-cask || true
-	brew install brew-cask
+	brew install caskroom/cask/brew-cask
 	@echo 'Mac Defaults'
 	# Expand save panel by default
 	defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -105,6 +104,13 @@ ifeq ($(shell uname),Darwin)
 	defaults write com.apple.finder ShowStatusBar -bool true
 	# Disable the “Are you sure you want to open this application?” dialog
 	defaults write com.apple.LaunchServices LSQuarantine -bool false
+	@echo 'Installing Fonts'
+	cp ~/trevdev/fonts/Monaco-for-Powerline.otf ~/Library/Fonts/Monaco-for-Powerline.otf
+endif
+
+.PHONY: mac-dock
+mac-dock:
+ifeq ($(shell uname),Darwin)
 	@echo 'Cleaning up dock'
 	./dockutil/scripts/dockutil --remove "Contacts"
 	./dockutil/scripts/dockutil --remove "Safari"
@@ -116,6 +122,23 @@ ifeq ($(shell uname),Darwin)
 	./dockutil/scripts/dockutil --remove "iBooks"
 	./dockutil/scripts/dockutil --remove "App Store"
 	./dockutil/scripts/dockutil --remove "System Preferences"
+	./dockutil/scripts/dockutil --remove "Mail"
+	./dockutil/scripts/dockutil --remove "Calendar"
+	./dockutil/scripts/dockutil --remove "Messages"
+	./dockutil/scripts/dockutil --remove "iPhoto"
+	./dockutil/scripts/dockutil --remove "Pages"
+	./dockutil/scripts/dockutil --remove "Numbers"
+	./dockutil/scripts/dockutil --remove "Keynote"
+endif
+
+.PHONY: mac-apps
+mac-apps:
+ifeq ($(shell uname),Darwin)
+	brew cask install google-chrome
+	brew cask install firefox
+	brew cask install iterm2
+	brew cask install sequel-pro
+	brew cask install slate
 endif
 
 .PHONY: ssh-key
