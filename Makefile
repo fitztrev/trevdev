@@ -134,11 +134,14 @@ endif
 .PHONY: mac-apps
 mac-apps:
 ifeq ($(shell uname),Darwin)
-	brew cask install google-chrome
 	brew cask install firefox
+	brew cask install google-chrome
 	brew cask install iterm2
+	brew cask install makerware
 	brew cask install sequel-pro
 	brew cask install slate
+	brew cask install vagrant
+	brew cask install virtualbox
 endif
 
 .PHONY: ssh-key
