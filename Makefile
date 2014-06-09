@@ -142,6 +142,7 @@ ifeq ($(shell uname),Darwin)
 	brew cask install slate
 	brew cask install vagrant
 	brew cask install virtualbox
+	brew cask install spotify
 endif
 
 .PHONY: ssh-key
