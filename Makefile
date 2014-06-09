@@ -136,13 +136,15 @@ mac-apps:
 ifeq ($(shell uname),Darwin)
 	brew cask install firefox
 	brew cask install google-chrome
+	brew cask install hipchat
 	brew cask install iterm2
 	brew cask install makerware
+	brew cask install openscad
 	brew cask install sequel-pro
 	brew cask install slate
+	brew cask install spotify
 	brew cask install vagrant
 	brew cask install virtualbox
-	brew cask install spotify
 endif
 
 .PHONY: ssh-key
