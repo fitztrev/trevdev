@@ -73,6 +73,9 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+" Saved macros
+let @t = ':Tab /€kb/\(=>\|=\)' "For lining up => and =
+
 " Key mappings
 	let mapleader = ","
 
