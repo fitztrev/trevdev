@@ -20,3 +20,5 @@ alias mkcd='_(){ mkdir $1; cd $1; }; _'
 alias growl='_(){ terminal-notifier -message "${1:-'OK'}" -activate "com.googlecode.iterm2" -sound Glass }; _'
 
 alias chromedev='open -a Google\ Chrome --args --ignore-certificate-errors --allow-running-insecure-content'
+
+alias tmux="TERM=screen-256color-bce tmux"

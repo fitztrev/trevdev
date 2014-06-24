@@ -63,7 +63,7 @@ autocmd BufNewFile,BufEnter .slate        set ft=python
 autocmd BufNewFile,BufEnter README        set ft=markdown
 
 " Source the .vimrc file after saving it
-autocmd BufWritePost .vimrc source $MYVIMRC
+" autocmd BufWritePost .vimrc source $MYVIMRC
 
 " Make trailing whitespace annoyingly highlighted.
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -128,10 +128,13 @@ let @t = ':Tab /€kb/\(=>\|=\)' "For lining up => and =
 
 " Colors
 	" Needed for Solarized colors to work correctly on local Mac
-	set background=light
+	set background=dark
+	colorscheme solarized
+	let g:solarized_termcolors=256
 
-	highlight Search ctermfg=White ctermbg=Red
-	highlight LineNr ctermfg=10
+	" highlight Search ctermfg=White ctermbg=Red
+	" highlight LineNr ctermfg=10
+	" highlight CursorLineNr ctermfg=1
 
 " Plugins
 	" Nerd Tree

@@ -43,6 +43,8 @@ setup:
 	ln -s  $(PWD)/oh-my-zsh    $(HOME)/.oh-my-zsh
 	rm -f  $(HOME)/.zshrc
 	ln -s  $(PWD)/shell/.zshrc $(HOME)/.zshrc
+	rm -f  $(HOME)/.tmux.conf
+	ln -s  $(PWD)/tmux/.tmux.conf $(HOME)/.tmux.conf
 	rm -f  $(HOME)/.slate
 	ln -s  $(PWD)/slate/.slate $(HOME)/.slate
 	## Install Vim plugins
