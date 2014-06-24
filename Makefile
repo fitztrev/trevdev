@@ -78,8 +78,9 @@ ifeq ($(shell uname),Darwin)
 	ruby -e "$$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 	brew tap homebrew/dupes || true
 	brew tap josegonzalez/homebrew-php || true
+	brew install vim --override-system-vi
 	brew install php55 php55-mcrypt
-	brew install composer git mosh phpunit rbenv ruby-build tmux vim wget zsh zsh-syntax-highlighting
+	brew install composer git mosh phpunit rbenv ruby-build tmux wget zsh zsh-syntax-highlighting
 	brew install caskroom/cask/brew-cask
 	@echo 'Mac Defaults'
 	# Expand save panel by default
