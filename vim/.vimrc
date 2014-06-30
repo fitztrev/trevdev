@@ -74,7 +74,7 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
 " Saved macros
-let @t = ':Tab /€kb/\(=>\|=\)' "For lining up => and =
+let @t = ':Tabularize /\(=>\|=\)' "For lining up => and =
 
 " Key mappings
 	let mapleader = ","
@@ -128,12 +128,12 @@ let @t = ':Tab /€kb/\(=>\|=\)' "For lining up => and =
 
 " Colors
 	" Needed for Solarized colors to work correctly on local Mac
-	set background=dark
-	colorscheme solarized
+	set background=light
+	" colorscheme solarized
 	let g:solarized_termcolors=256
 
-	" highlight Search ctermfg=White ctermbg=Red
-	" highlight LineNr ctermfg=10
+	highlight Search ctermfg=White ctermbg=Red
+	highlight LineNr ctermfg=10
 	" highlight CursorLineNr ctermfg=1
 
 " Plugins
