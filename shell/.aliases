@@ -22,3 +22,4 @@ alias growl='_(){ terminal-notifier -message "${1:-'OK'}" -activate "com.googlec
 alias chromedev='open -a Google\ Chrome --args --ignore-certificate-errors --allow-running-insecure-content'
 
 alias tmux="TERM=screen-256color-bce tmux"
+alias composer="hhvm /usr/local/bin/composer"
