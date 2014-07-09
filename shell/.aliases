@@ -22,3 +22,8 @@ alias growl='_(){ terminal-notifier -message "${1:-'OK'}" -activate "com.googlec
 alias chromedev='open -a Google\ Chrome --args --ignore-certificate-errors --allow-running-insecure-content'
 
 alias tmux="TERM=screen-256color-bce tmux"
+
+alias openscad='/opt/homebrew-cask/Caskroom/openscad/2014.03/OpenSCAD.app/Contents/MacOS/OpenSCAD'
+alias composer='hhvm -v ResourceLimit.SocketDefaultTimeout=60 -v Http.SlowQueryThreshold=30000 /usr/local/Cellar/composer/1.0.0-alpha8/libexec/composer.phar'
+
+alias ts='_(){ if [ "$1" ]; then SESSION_NAME=$1 else SESSION_NAME=${PWD##*/} fi; tmux new-session -s $SESSION_NAME }; _'
