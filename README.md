@@ -25,12 +25,19 @@ $ make install
 
 ### Configuring iTerm2
 
-1. Install `Monaco for Powerline` font (included)
-2. Set iTerm2 preferences URL on the General tab to the location of the `iterm2` folder
-3. Restart iTerm2
+1. Set iTerm2 preferences URL on the General tab to the location of the `iterm2` folder
+2. Restart iTerm2
 
 ## Updating
 
 ```
 $ make update
+```
+
+## Other
+
+Generate a new SSH key
+
+```
+$ make ssh-key
 ```
