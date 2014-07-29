@@ -82,7 +82,19 @@ ifeq ($(shell uname),Darwin)
 	brew tap josegonzalez/homebrew-php || true
 	brew install vim --override-system-vi
 	brew install php55 php55-mcrypt
-	brew install composer git mosh nvm phpunit rbenv ruby-build tmux wget zsh zsh-syntax-highlighting
+	brew install \
+		composer \
+		git \
+		mosh \
+		nvm \
+		optipng \
+		phpunit \
+		rbenv \
+		ruby-build \
+		tmux \
+		wget \
+		zsh \
+		zsh-syntax-highlighting
 	brew install caskroom/cask/brew-cask
 	@echo 'Mac Defaults'
 	# Expand save panel by default
