@@ -149,6 +149,7 @@ endif
 .PHONY: mac-apps
 mac-apps:
 ifeq ($(shell uname),Darwin)
+	brew cask install caffeine
 	brew cask install firefox
 	brew cask install google-chrome
 	brew cask install hipchat
