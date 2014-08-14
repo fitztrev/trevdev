@@ -14,6 +14,8 @@ alias ..5="cd ../../../../.."
 alias -- -="cd -"
 
 alias artisan='php artisan'
+alias art='php artisan'
+
 alias nw='/Applications/node-webkit.app/Contents/MacOS/node-webkit'
 
 alias mkcd='_(){ mkdir $1; cd $1; }; _'
