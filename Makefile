@@ -93,6 +93,7 @@ ifeq ($(shell uname),Darwin)
 		ruby-build \
 		tmux \
 		wget \
+		youtube-dl \
 		zsh \
 		zsh-syntax-highlighting
 	brew install caskroom/cask/brew-cask
