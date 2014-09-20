@@ -8,7 +8,6 @@ function FindProxyForURL(url, host) {
          || (shExpMatch(host, "10.*"))
          || (shExpMatch(host, "192.*"))
          || (shExpMatch(host, "*.dev"))
-         || (shExpMatch(host, "*.intlbancard.*"))
        )
     {
         return "DIRECT";

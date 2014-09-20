@@ -60,7 +60,10 @@ source $(brew --prefix nvm)/nvm.sh
 
 ## Rbenv
 #export RBENV_ROOT=/usr/local/var/rbenv
-type rbenv >/dev/null 2>&1 && eval "$(rbenv init -)"
+#type rbenv >/dev/null 2>&1 && eval "$(rbenv init -)"
+
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 ## Travis gem
 [[ -s ~/.travis/travis.sh ]] && source ~/.travis/travis.sh
