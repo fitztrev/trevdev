@@ -30,3 +30,5 @@ alias openscad='/opt/homebrew-cask/Caskroom/openscad/2014.03/OpenSCAD.app/Conten
 ##alias composer='hhvm -v ResourceLimit.SocketDefaultTimeout=60 -v Http.SlowQueryThreshold=30000 /usr/local/Cellar/composer/1.0.0-alpha8/libexec/composer.phar'
 
 alias pyserve='python -m SimpleHTTPServer $1'
+
+alias java='/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java'
