@@ -1,5 +1,5 @@
 build: update
-install: git setup nvm linux mac mac-dock mac-apps
+install: git setup linux mac mac-dock mac-apps
 
 GIT_USER_NAME := $(shell git config --get --global user.name)
 GIT_USER_EMAIL := $(shell git config --get --global user.email)
@@ -53,11 +53,6 @@ setup:
 	echo 'Changing shell. Enter your password if prompted.'
 	chsh -s /bin/zsh
 
-.PHONY: nvm
-nvm:
-	@echo 'Installing NVM'
-	curl https://raw.github.com/creationix/nvm/master/install.sh | sh
-
 .PHONY: linux
 linux:
 ifeq ($(shell uname),Linux)
@@ -76,8 +71,8 @@ mac:
 ifeq ($(shell uname),Darwin)
 	@echo 'Configuring Mac preferences'
 	osascript applescript/*.applescript
-	@echo 'Installing other Homebrew packages'
-	ruby -e "$$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+	@echo 'Installing Homebrew + packages'
+	ruby -e "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	brew tap homebrew/dupes || true
 	brew tap josegonzalez/homebrew-php || true
 	brew install vim --override-system-vi
@@ -131,6 +126,7 @@ ifeq ($(shell uname),Darwin)
 	./dockutil/scripts/dockutil --remove "Contacts"
 	./dockutil/scripts/dockutil --remove "Safari"
 	./dockutil/scripts/dockutil --remove "Notes"
+	./dockutil/scripts/dockutil --remove "Reminders"
 	./dockutil/scripts/dockutil --remove "Maps"
 	./dockutil/scripts/dockutil --remove "FaceTime"
 	./dockutil/scripts/dockutil --remove "Photo Booth"
@@ -153,10 +149,7 @@ ifeq ($(shell uname),Darwin)
 	brew cask install caffeine
 	brew cask install firefox
 	brew cask install google-chrome
-	brew cask install hipchat
 	brew cask install iterm2
-	brew cask install makerware
-	brew cask install openscad
 	brew cask install sequel-pro
 	brew cask install slate
 	brew cask install spotifree
