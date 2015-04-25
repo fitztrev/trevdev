@@ -6,7 +6,6 @@
 
 ```
 $ sudo xcodebuild -license
-$ xcode-select --install
 ```
 
 ### Ubuntu
