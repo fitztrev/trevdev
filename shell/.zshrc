@@ -36,7 +36,7 @@ fi
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew composer git laravel npm tmux vagrant)
+plugins=(brew composer git laravel5 npm tmux vagrant)
 
 DISABLE_AUTO_UPDATE="true"
 

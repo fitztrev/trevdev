@@ -91,6 +91,10 @@ ifeq ($(shell uname),Darwin)
 		youtube-dl \
 		zsh \
 		zsh-syntax-highlighting
+	composer global require "laravel/installer=~1.1"
+	nvm install stable
+	nvm alias default stable
+	npm install --global bower gulp
 	brew install caskroom/cask/brew-cask
 	@echo 'Mac Defaults'
 	# Expand save panel by default
