@@ -72,7 +72,7 @@ ifeq ($(shell uname),Darwin)
 	@echo 'Configuring Mac preferences'
 	osascript applescript/*.applescript
 	@echo 'Installing Homebrew + packages'
-	ruby -e "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	@ruby -e "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" || true
 	brew tap homebrew/dupes || true
 	brew tap josegonzalez/homebrew-php || true
 	brew install vim --override-system-vi
