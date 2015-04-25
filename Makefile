@@ -1,5 +1,5 @@
 build: update
-install: git setup linux mac mac-dock mac-apps
+install: git setup linux mac applescripts
 
 GIT_USER_NAME := $(shell git config --get --global user.name)
 GIT_USER_EMAIL := $(shell git config --get --global user.email)
@@ -66,11 +66,16 @@ ifeq ($(shell uname),Linux)
 	 weechat
 endif
 
-.PHONY: mac
-mac:
+.PHONY: applescripts
+applescripts:
 ifeq ($(shell uname),Darwin)
 	@echo 'Configuring Mac preferences'
 	osascript applescript/*.applescript
+endif
+
+.PHONY: mac
+mac:
+ifeq ($(shell uname),Darwin)
 	@echo 'Installing Homebrew + packages'
 	@ruby -e "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" || true
 	brew tap homebrew/dupes || true
@@ -92,9 +97,9 @@ ifeq ($(shell uname),Darwin)
 		zsh \
 		zsh-syntax-highlighting
 	composer global require "laravel/installer=~1.1"
-	nvm install stable
-	nvm alias default stable
-	npm install --global bower gulp
+	# nvm install stable
+	# nvm alias default stable
+	# npm install --global bower gulp
 	brew install caskroom/cask/brew-cask
 	@echo 'Mac Defaults'
 	# Expand save panel by default
@@ -121,11 +126,6 @@ ifeq ($(shell uname),Darwin)
 	defaults write com.apple.LaunchServices LSQuarantine -bool false
 	@echo 'Installing Fonts'
 	cp ~/trevdev/fonts/Monaco-for-Powerline.otf ~/Library/Fonts/Monaco-for-Powerline.otf
-endif
-
-.PHONY: mac-dock
-mac-dock:
-ifeq ($(shell uname),Darwin)
 	@echo 'Cleaning up dock'
 	./dockutil/scripts/dockutil --remove "Contacts"
 	./dockutil/scripts/dockutil --remove "Safari"
@@ -145,11 +145,6 @@ ifeq ($(shell uname),Darwin)
 	./dockutil/scripts/dockutil --remove "Pages"
 	./dockutil/scripts/dockutil --remove "Numbers"
 	./dockutil/scripts/dockutil --remove "Keynote"
-endif
-
-.PHONY: mac-apps
-mac-apps:
-ifeq ($(shell uname),Darwin)
 	brew cask install caffeine
 	brew cask install firefox
 	brew cask install google-chrome
@@ -160,6 +155,7 @@ ifeq ($(shell uname),Darwin)
 	brew cask install spotify
 	brew cask install vagrant
 	brew cask install virtualbox
+	vagrant box add laravel/homestead || true
 endif
 
 .PHONY: ssh-key
