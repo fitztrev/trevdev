@@ -145,6 +145,7 @@ ifeq ($(shell uname),Darwin)
 	./dockutil/scripts/dockutil --remove "Pages"
 	./dockutil/scripts/dockutil --remove "Numbers"
 	./dockutil/scripts/dockutil --remove "Keynote"
+	brew cask install arduino
 	brew cask install caffeine
 	brew cask install firefox
 	brew cask install google-chrome
