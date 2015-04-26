@@ -148,6 +148,7 @@ ifeq ($(shell uname),Darwin)
 	brew cask install arduino
 	brew cask install caffeine
 	brew cask install firefox
+	brew cask install flux
 	brew cask install google-chrome
 	brew cask install iterm2
 	brew cask install sequel-pro
