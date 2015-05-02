@@ -1,5 +1,5 @@
 build: update
-install: git setup linux mac applescripts
+install: git setup linux mac
 
 GIT_USER_NAME := $(shell git config --get --global user.name)
 GIT_USER_EMAIL := $(shell git config --get --global user.email)
@@ -64,13 +64,6 @@ ifeq ($(shell uname),Linux)
 	 mosh \
 	 tmux \
 	 weechat
-endif
-
-.PHONY: applescripts
-applescripts:
-ifeq ($(shell uname),Darwin)
-	@echo 'Configuring Mac preferences'
-	osascript applescript/*.applescript
 endif
 
 .PHONY: mac
