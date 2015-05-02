@@ -138,10 +138,8 @@ ifeq ($(shell uname),Darwin)
 	./dockutil/scripts/dockutil --remove "Pages"
 	./dockutil/scripts/dockutil --remove "Numbers"
 	./dockutil/scripts/dockutil --remove "Keynote"
-	brew cask install arduino
 	brew cask install caffeine
 	brew cask install firefox
-	brew cask install flux
 	brew cask install google-chrome
 	brew cask install iterm2
 	brew cask install sequel-pro
@@ -153,6 +151,11 @@ ifeq ($(shell uname),Darwin)
 	brew cask install virtualbox
 	vagrant box add laravel/homestead || true
 endif
+
+.PHONY: mac-personal
+mac-personal:
+	brew cask install flux
+	brew cask install arduino
 
 .PHONY: ssh-key
 ssh-key:
