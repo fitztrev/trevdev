@@ -45,8 +45,8 @@ setup:
 	ln -s  $(PWD)/shell/.zshrc $(HOME)/.zshrc
 	rm -f  $(HOME)/.tmux.conf
 	ln -s  $(PWD)/tmux/.tmux.conf $(HOME)/.tmux.conf
-	rm -f  $(HOME)/.slate
-	ln -s  $(PWD)/slate/.slate $(HOME)/.slate
+	# rm -f  $(HOME)/.slate
+	# ln -s  $(PWD)/slate/.slate $(HOME)/.slate
 	## Install Vim plugins
 	vim +BundleInstall +qall
 	## Change shell
@@ -152,7 +152,8 @@ ifeq ($(shell uname),Darwin)
 	brew cask install google-chrome
 	brew cask install iterm2
 	brew cask install sequel-pro
-	brew cask install slate
+	#brew cask install slate
+	brew cask install spectacle
 	brew cask install spotifree
 	brew cask install spotify
 	brew cask install vagrant
