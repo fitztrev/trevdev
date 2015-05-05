@@ -1,20 +1,10 @@
 ## Installation
 
-### Requirements
-
-#### OS-X
-
-```
-$ sudo xcodebuild -license
-```
-
-### Ubuntu
+#### For Ubuntu machines
 
 ```
 $ sudo apt-get install -y build-essential git vim zsh
 ```
-
-## Installation
 
 ```
 $ git clone https://github.com/fitztrev/trevdev.git ~/trevdev
