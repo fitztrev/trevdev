@@ -15,7 +15,7 @@ update:
 	@echo 'Updating Gems'
 	@gem update || true
 	@echo 'Updating Homebrew'
-	@type brew >/dev/null 2>&1 && brew update && brew upgrade || true
+	@type brew >/dev/null 2>&1 && brew update && brew upgrade --all || true
 
 .PHONY: git
 git:
@@ -90,9 +90,6 @@ ifeq ($(shell uname),Darwin)
 		zsh \
 		zsh-syntax-highlighting
 	composer global require "laravel/installer=~1.1"
-	# nvm install stable
-	# nvm alias default stable
-	# npm install --global bower gulp
 	brew install caskroom/cask/brew-cask
 	@echo 'Mac Defaults'
 	# Expand save panel by default
@@ -112,7 +109,7 @@ ifeq ($(shell uname),Darwin)
 	# Finder: show all filename extensions
 	defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 	# Add iOS Simulator to Launchpad
-	[ ! -L /Applications/iOS\ Simulator.app ] && ln -s /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app /Applications/iOS\ Simulator.app || true
+	#[ ! -L /Applications/iOS\ Simulator.app ] && ln -s /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app /Applications/iOS\ Simulator.app || true
 	# Finder: show status bar
 	defaults write com.apple.finder ShowStatusBar -bool true
 	# Disable the “Are you sure you want to open this application?” dialog
@@ -142,7 +139,7 @@ ifeq ($(shell uname),Darwin)
 	brew cask install caffeine
 	brew cask install cyberduck
 	brew cask install firefox
-	#brew cask install go2shell
+	brew cask install go2shell
 	brew cask install google-chrome
 	brew cask install iterm2
 	brew cask install sequel-pro
@@ -163,3 +160,10 @@ mac-personal:
 ssh-key:
 	@read -r -p "Email Address/Comment: " COMMENT; \
 	 ssh-keygen -t rsa -C "$$COMMENT"
+
+#nvm install stable
+#nvm alias default stable
+#npm install --global bower gulp
+#rbenv install 2.2.2
+#rbenv global 2.2.2
+#gem install terminal-notifier
