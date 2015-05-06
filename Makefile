@@ -148,8 +148,17 @@ ifeq ($(shell uname),Darwin)
 	brew cask install spotify
 	brew cask install vagrant
 	brew cask install virtualbox
-	vagrant box add laravel/homestead || true
 endif
+
+.PHONY: finalize
+finalize:
+	nvm install stable
+	nvm alias default stable
+	npm install --global bower gulp
+	#rbenv install 2.2.2
+	#rbenv global 2.2.2
+	#gem install terminal-notifier
+	vagrant box add laravel/homestead || true
 
 .PHONY: mac-personal
 mac-personal:
@@ -160,10 +169,3 @@ mac-personal:
 ssh-key:
 	@read -r -p "Email Address/Comment: " COMMENT; \
 	 ssh-keygen -t rsa -C "$$COMMENT"
-
-#nvm install stable
-#nvm alias default stable
-#npm install --global bower gulp
-#rbenv install 2.2.2
-#rbenv global 2.2.2
-#gem install terminal-notifier
