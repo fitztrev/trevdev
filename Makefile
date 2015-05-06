@@ -141,6 +141,7 @@ ifeq ($(shell uname),Darwin)
 	brew cask install firefox
 	brew cask install go2shell
 	brew cask install google-chrome
+	brew cask install imageoptim
 	brew cask install iterm2
 	brew cask install sequel-pro
 	brew cask install slate

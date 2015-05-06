@@ -174,6 +174,7 @@ let @t = ':Tabularize /\(=>\|=\)' "For lining up => and =
 
 	" Git Gutter
 	highlight clear SignColumn
+	let g:gitgutter_max_signs = 99999
 
 	" Syntastic
 	" disable for angular
