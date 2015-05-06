@@ -91,6 +91,20 @@ ifeq ($(shell uname),Darwin)
 		zsh-syntax-highlighting
 	composer global require "laravel/installer=~1.1"
 	brew install caskroom/cask/brew-cask
+	brew cask install atom
+	brew cask install caffeine
+	brew cask install cyberduck
+	brew cask install firefox
+	brew cask install go2shell
+	brew cask install google-chrome
+	brew cask install imageoptim
+	brew cask install iterm2
+	brew cask install sequel-pro
+	brew cask install slate
+	brew cask install spotifree
+	brew cask install spotify
+	brew cask install vagrant
+	brew cask install virtualbox
 	@echo 'Mac Defaults'
 	# Expand save panel by default
 	defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -135,30 +149,11 @@ ifeq ($(shell uname),Darwin)
 	./dockutil/scripts/dockutil --remove "Pages"
 	./dockutil/scripts/dockutil --remove "Numbers"
 	./dockutil/scripts/dockutil --remove "Keynote"
-	brew cask install atom
-	brew cask install caffeine
-	brew cask install cyberduck
-	brew cask install firefox
-	brew cask install go2shell
-	brew cask install google-chrome
-	brew cask install imageoptim
-	brew cask install iterm2
-	brew cask install sequel-pro
-	brew cask install slate
-	brew cask install spotifree
-	brew cask install spotify
-	brew cask install vagrant
-	brew cask install virtualbox
-endif
-
-.PHONY: finalize
-finalize:
-	nvm install stable
-	nvm alias default stable
+	source $$(brew --prefix nvm)/nvm.sh && nvm install stable
+	source $$(brew --prefix nvm)/nvm.sh && nvm alias default stable
 	npm install --global bower gulp
-	#rbenv install 2.2.2
-	#rbenv global 2.2.2
-	#gem install terminal-notifier
+	rbenv install 2.2.2 || true
+	rbenv global 2.2.2
 	vagrant box add laravel/homestead || true
 
 .PHONY: mac-personal
