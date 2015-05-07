@@ -16,7 +16,6 @@ update:
 	@gem update || true
 	@echo 'Updating Homebrew'
 	@type brew >/dev/null 2>&1 && brew update && brew upgrade --all || true
-endif
 
 .PHONY: git
 git:
@@ -156,6 +155,7 @@ ifeq ($(shell uname),Darwin)
 	rbenv install 2.2.2 || true
 	rbenv global 2.2.2
 	vagrant box add laravel/homestead || true
+endif
 
 .PHONY: mac-personal
 mac-personal:
