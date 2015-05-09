@@ -56,7 +56,7 @@ export PATH=~/dev/go_appengine:$PATH
 
 ## NVM (Node Version Manager)
 # [[ -s ~/.nvm/nvm.sh ]] && . ~/.nvm/nvm.sh
-source $(brew --prefix nvm)/nvm.sh
+if which brew > /dev/null; then source $(brew --prefix nvm)/nvm.sh; fi
 
 ## Rbenv
 #export RBENV_ROOT=/usr/local/var/rbenv
