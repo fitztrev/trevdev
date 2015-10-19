@@ -91,7 +91,7 @@ ifeq ($(shell uname),Darwin)
 		zsh-syntax-highlighting
 	composer global require "laravel/installer=~1.1"
 	brew install caskroom/cask/brew-cask
-	brew cask install atom
+	#brew cask install atom
 	brew cask install caffeine
 	brew cask install cyberduck
 	brew cask install firefox
@@ -99,6 +99,7 @@ ifeq ($(shell uname),Darwin)
 	brew cask install google-chrome
 	brew cask install imageoptim
 	brew cask install iterm2
+	brew cask install macdown
 	brew cask install sequel-pro
 	brew cask install slate
 	brew cask install spotifree
@@ -107,51 +108,51 @@ ifeq ($(shell uname),Darwin)
 	brew cask install virtualbox
 	@echo 'Mac Defaults'
 	# Expand save panel by default
-	defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+	#defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 	# Save to disk (not to iCloud) by default
-	defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+	#defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 	# Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
-	defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+	#defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 	# Totally disable the dashboard
-	defaults write com.apple.dashboard mcx-disabled -boolean TRUE
+	#defaults write com.apple.dashboard mcx-disabled -boolean TRUE
 	# Always open everything in Finder's list view. This is important.
-	defaults write com.apple.Finder FXPreferredViewStyle Nlsv
+	#defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 	# Show the ~/Library folder.
-	chflags nohidden ~/Library
+	#chflags nohidden ~/Library
 	# Disable the warning when changing a file extension
-	defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+	#defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 	# Finder: show all filename extensions
-	defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+	#defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 	# Add iOS Simulator to Launchpad
 	#[ ! -L /Applications/iOS\ Simulator.app ] && ln -s /Applications/Xcode.app/Contents/Applications/iPhone\ Simulator.app /Applications/iOS\ Simulator.app || true
 	# Finder: show status bar
-	defaults write com.apple.finder ShowStatusBar -bool true
+	#defaults write com.apple.finder ShowStatusBar -bool true
 	# Disable the “Are you sure you want to open this application?” dialog
-	defaults write com.apple.LaunchServices LSQuarantine -bool false
+	#defaults write com.apple.LaunchServices LSQuarantine -bool false
 	@echo 'Installing Fonts'
 	cp ~/trevdev/fonts/Monaco-for-Powerline.otf ~/Library/Fonts/Monaco-for-Powerline.otf
 	@echo 'Cleaning up dock'
-	./dockutil/scripts/dockutil --remove "Contacts"
-	./dockutil/scripts/dockutil --remove "Safari"
-	./dockutil/scripts/dockutil --remove "Notes"
-	./dockutil/scripts/dockutil --remove "Reminders"
-	./dockutil/scripts/dockutil --remove "Maps"
-	./dockutil/scripts/dockutil --remove "FaceTime"
-	./dockutil/scripts/dockutil --remove "Photo Booth"
-	./dockutil/scripts/dockutil --remove "iTunes"
-	./dockutil/scripts/dockutil --remove "iBooks"
-	./dockutil/scripts/dockutil --remove "App Store"
-	./dockutil/scripts/dockutil --remove "System Preferences"
-	./dockutil/scripts/dockutil --remove "Mail"
-	./dockutil/scripts/dockutil --remove "Calendar"
-	./dockutil/scripts/dockutil --remove "Messages"
-	./dockutil/scripts/dockutil --remove "iPhoto"
-	./dockutil/scripts/dockutil --remove "Pages"
-	./dockutil/scripts/dockutil --remove "Numbers"
-	./dockutil/scripts/dockutil --remove "Keynote"
+	# ./dockutil/scripts/dockutil --remove "Contacts"
+	# ./dockutil/scripts/dockutil --remove "Safari"
+	# ./dockutil/scripts/dockutil --remove "Notes"
+	# ./dockutil/scripts/dockutil --remove "Reminders"
+	# ./dockutil/scripts/dockutil --remove "Maps"
+	# ./dockutil/scripts/dockutil --remove "FaceTime"
+	# ./dockutil/scripts/dockutil --remove "Photo Booth"
+	# ./dockutil/scripts/dockutil --remove "iTunes"
+	# ./dockutil/scripts/dockutil --remove "iBooks"
+	# ./dockutil/scripts/dockutil --remove "App Store"
+	# ./dockutil/scripts/dockutil --remove "System Preferences"
+	# ./dockutil/scripts/dockutil --remove "Mail"
+	# ./dockutil/scripts/dockutil --remove "Calendar"
+	# ./dockutil/scripts/dockutil --remove "Messages"
+	# ./dockutil/scripts/dockutil --remove "iPhoto"
+	# ./dockutil/scripts/dockutil --remove "Pages"
+	# ./dockutil/scripts/dockutil --remove "Numbers"
+	# ./dockutil/scripts/dockutil --remove "Keynote"
 	source $$(brew --prefix nvm)/nvm.sh && nvm install stable
 	source $$(brew --prefix nvm)/nvm.sh && nvm alias default stable
-	npm install --global bower gulp
+	source $$(brew --prefix nvm)/nvm.sh && npm install --global bower gulp
 	rbenv install 2.2.2 || true
 	rbenv global 2.2.2
 	vagrant box add laravel/homestead || true

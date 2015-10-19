@@ -276,7 +276,7 @@
 	<key>HighlightTabLabels</key>
 	<true/>
 	<key>HotKeyBookmark</key>
-	<string>48154ECE-139E-4CFB-82D3-CDD92FFB4A00</string>
+	<string>3D4509F0-486C-4561-9D8B-899401BBDA4E</string>
 	<key>HotKeyTogglesWindow</key>
 	<true/>
 	<key>Hotkey</key>
@@ -301,6 +301,8 @@
 	<false/>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/trevdev/iterm2</string>
+	<key>NSNavPanelExpandedSizeForOpenMode</key>
+	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -308,9 +310,15 @@
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
 	<key>NSWindow Frame Preferences</key>
-	<string>317 324 924 485 0 0 1680 1028 </string>
+	<string>1507 449 924 485 0 0 3200 1777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>168 179 1410 798 0 0 1680 1028 </string>
+	<string>0 4 1599 1773 0 0 3200 1777 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>1600 4 1599 1773 0 0 3200 1777 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>1600 4 1599 1773 0 0 3200 1777 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>1600 4 1599 1773 0 0 3200 1777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -543,7 +551,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>No</string>
+			<string>Recycle</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Disable Printing</key>
@@ -1051,6 +1059,10 @@
 			<string>~/dev</string>
 		</dict>
 	</array>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>453298781.14540499</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>456064849.67416799</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1099,7 +1111,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/tfitzgerald/trevdev/iterm2</string>
+	<string>/Users/JwTek/trevdev/iterm2</string>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -1115,7 +1127,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-06-04T15:58:39Z</date>
+	<date>2015-06-15T12:23:51Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -1176,6 +1188,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>1.0.0.20130622</string>
+	<string>2.1.1</string>
 </dict>
 </plist>
