@@ -55,8 +55,6 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH=~/dev/go_appengine:$PATH
 
 ## NVM (Node Version Manager)
-# [[ -s ~/.nvm/nvm.sh ]] && . ~/.nvm/nvm.sh
-if which brew > /dev/null; then source $(brew --prefix nvm)/nvm.sh; fi
 
 ## Rbenv
 #export RBENV_ROOT=/usr/local/var/rbenv
@@ -82,3 +80,6 @@ export PATH="/Users/tfitzgerald/android-sdk/sdk/tools:$PATH"
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home"
 
 prompt_context () { }
+
+export NVM_DIR="/Users/JwTek/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

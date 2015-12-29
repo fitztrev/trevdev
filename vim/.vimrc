@@ -34,9 +34,10 @@ filetype plugin on
 
 " General Settings
 syntax on
+set tabstop=4
+set shiftwidth=4
+set expandtab
 set autoindent
-set ts=4
-set sw=4
 set title
 set visualbell
 set ignorecase
